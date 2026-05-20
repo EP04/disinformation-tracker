@@ -1,0 +1,39 @@
+name: Reddit Scraper
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # runs at midnight and noon UTC every day
+  workflow_dispatch:          # lets you trigger it manually from GitHub for testing
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas gspread google-auth google-auth-oauthlib
+
+      - name: Write credentials.json from secret
+        run: echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+
+      - name: Write token.json from secret
+        run: echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
+
+      - name: Run scraper
+        run: python reddit_scraper.py
+
+      - name: Save seen_ids and results back to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add seen_ids.txt results_all.csv || true
+          git diff --staged --quiet || git commit -m "update results and seen_ids [skip ci]"
+          git push
