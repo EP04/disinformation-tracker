@@ -1,5 +1,4 @@
 credentials.json
 token.json
 seen_ids.txt
-results_all.csv
 results_*.csv
