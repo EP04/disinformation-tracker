@@ -1,4 +1,4 @@
-name: Reddit Scraper
+name: Reddit Monitor
 
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
         run: echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
 
       - name: Run scraper
-        run: python reddit_scraper.py
+        run: python reddit_monitor.py
 
       - name: Save seen_ids and results back to repo
         run: |
