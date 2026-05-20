@@ -4,6 +4,11 @@ import time
 import os
 from datetime import datetime, timezone
 
+import gspread
+from google.oauth2.credentials import Credentials as OAuthCredentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+
 # --- Configuration ---
 SUBREDDITS = [
     # News & politics — highest yield
@@ -130,11 +135,28 @@ SLEEP_BETWEEN_REQUESTS = 1   # seconds — be polite to Reddit's servers to not 
 
 HEADERS = {"User-Agent": "research-monitor/0.1"}
 
+# --- Google Sheets configuration ---
+CREDENTIALS_FILE = "credentials.json"   # OAuth client JSON downloaded from Google Cloud
+TOKEN_FILE        = "token.json"         # Auto-created after first login — do not delete
+SPREADSHEET_NAME  = "Prototype"  # Exact name of Google Spreadsheet I want to upload to
+SHEET_TAB_NAME    = "Reddit"                 # Tab name to write into
+
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive",
+]
+
 # --- Timestamped output filename ---
 scan_time = datetime.now().strftime("%Y-%m-%d_%H-%M")
 OUTPUT_FILE = f"results_{scan_time}.csv"
 MASTER_FILE = "results_all.csv"
 SEEN_IDS_FILE = "seen_ids.txt"
+
+COLUMNS = [
+    "timestamp", "post_id", "platform", "subreddit", "title",
+    "keywords_matched", "match_count", "keywords_in_post", "keywords_in_comments",
+    "score", "num_comments", "author", "url", "created_utc",
+]
 
 # --- Load seen IDs to avoid duplicates across scans ---
 if os.path.exists(SEEN_IDS_FILE):
@@ -196,6 +218,46 @@ def fetch_comments(post_id):
             time.sleep(5)
     return ""
 
+# --- Google Sheets related functions
+def get_sheet():
+    creds = None
+    if os.path.exists(TOKEN_FILE):
+        creds = OAuthCredentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_FILE, SCOPES)
+            creds = flow.run_local_server(port=0)
+        with open(TOKEN_FILE, "w") as f:
+            f.write(creds.to_json())
+    client = gspread.authorize(creds)
+    spreadsheet = client.open(SPREADSHEET_NAME)
+    try:
+        sheet = spreadsheet.worksheet(SHEET_TAB_NAME)
+    except gspread.WorksheetNotFound:
+        sheet = spreadsheet.add_worksheet(title=SHEET_TAB_NAME, rows=10000, cols=20)
+        print(f"  Created new tab '{SHEET_TAB_NAME}'")
+    return sheet
+ 
+ 
+def upload_to_sheets(new_rows):
+    if not new_rows:
+        print("  Nothing to upload.")
+        return
+    print(f"\nUploading {len(new_rows)} rows to Google Sheets...")
+    sheet = get_sheet()
+    existing = sheet.get_all_values()
+    if not existing:
+        sheet.append_row(COLUMNS)
+        print("  Header row written.")
+    rows_to_append = [
+        [str(row.get(col, "")) for col in COLUMNS]
+        for row in new_rows
+    ]
+    sheet.append_rows(rows_to_append, value_input_option="USER_ENTERED")
+    print(f"  ✓ {len(rows_to_append)} rows appended to '{SHEET_TAB_NAME}' in '{SPREADSHEET_NAME}'")
+
 # --- Main scan ---
 print(f"\nScan started at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Monitoring {len(SUBREDDITS)} subreddits for {len(KEYWORDS)} keywords\n")
@@ -251,7 +313,9 @@ for sub in SUBREDDITS:
 
 new_rows.sort(key=lambda x: x["match_count"], reverse=True) #sort results by relevance (number of keywords matched) before saving
 
-# --- Save results ---
+# --- Save results in local CSVs 
+# (the program saves to local csv and also uploads to Google Sheets as you can see
+# in the Google Sheets functions above) ---
 if new_rows:
     new_df = pd.DataFrame(new_rows)
 
@@ -271,6 +335,13 @@ if new_rows:
 
 else:
     print("\nNo new matches found this scan.")
+
+# --- Upload to Google Sheets ---
+try:
+    upload_to_sheets(new_rows)
+except Exception as e:
+    print(f"\n Google Sheets upload failed: {e}")
+    print("  Local CSV files are still saved as a backup.")
 
 # --- Update seen IDs file ---
 with open(SEEN_IDS_FILE, "w") as f:
