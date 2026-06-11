@@ -3,11 +3,14 @@ import pandas as pd
 import time
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 import gspread
 from google.oauth2.credentials import Credentials as OAuthCredentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+
+AEST = ZoneInfo("Australia/Sydney")  # for timestamping in local time
 
 # --- Configuration ---
 SUBREDDITS = [
@@ -120,20 +123,26 @@ SUBREDDITS = [
     "Wodonga", #not picked up in AusReddit list, manually added
 ]
 
+# Lowercase set for fast, case-insensitive subreddit filtering
+SUBREDDITS_LOWER = {s.lower() for s in SUBREDDITS}
+
 KEYWORDS = [
     #fluoridation
-    "fluoridation", "fluoride free australia",
+    "fluoridation", "fluoride", "fluoride free australia",
     "fluoride water filter", "fluoride byproduct", "fluoride thyroid", "mass medication fluoride",
     #vaccination
-    "vaccination", "selective vaccine schedule", "pharma vaccine lying", "vaccine autism parent group", 
+    "vaccination", "vaccine", "selective vaccine schedule", "pharma vaccine lying", "vaccine autism parent group", 
     "vaccine death data", "vaccine less than natural immunity",
 ]
 
-POST_LIMIT = 100          # posts to fetch per subreddit
+SEARCH_SIZE = 100          # posts to fetch per subreddit
 CASE_SENSITIVE = False
-SLEEP_BETWEEN_REQUESTS = 1   # seconds — be polite to Reddit's servers to not be rate-limited
+SLEEP_BETWEEN_REQUESTS = 2   # seconds — be polite to Reddit's servers to not be rate-limited
 
-HEADERS = {"User-Agent": "research-monitor/0.1"}
+PULLPUSH_SUBMISSION_URL = "https://api.pullpush.io/reddit/search/submission/"
+PULLPUSH_COMMENT_URL = "https://api.pullpush.io/reddit/search/comment/"
+
+HEADERS = {"User-Agent": "research-monitor/0.2"}
 
 # --- Google Sheets configuration ---
 CREDENTIALS_FILE = "credentials.json"   # OAuth client JSON downloaded from Google Cloud
@@ -165,27 +174,28 @@ if os.path.exists(SEEN_IDS_FILE):
 else:
     seen_ids = set()
 
-# --- Fetch posts from a subreddit (with retry on rate limit) ---
-def fetch_posts(subreddit):
-    url = f"https://www.reddit.com/r/{subreddit}/new.json?limit={POST_LIMIT}"
+#Pullpush functions
+def fetch_submissions(keyword):
+    params = {
+        "q": keyword,
+        "size": SEARCH_SIZE,
+        "sort": "desc",
+        "sort_type": "created_utc",
+    }
     for attempt in range(3):
         try:
-            response = requests.get(url, headers=HEADERS, timeout=10)
+            response = requests.get(PULLPUSH_SUBMISSION_URL, params=params, headers=HEADERS,timeout=30)
             if response.status_code == 429:
-                wait = int(response.headers.get("Retry-After", 10))
-                print(f"  Rate limited — waiting {wait}s...")
-                time.sleep(wait)
+                print(f"  Rate limited — waiting 30s...")
+                time.sleep(30)
                 continue
             response.raise_for_status()
-            return [p["data"] for p in response.json()["data"]["children"]]
+            return response.json().get("data", [])
         except Exception as e:
-            print(f"  Attempt {attempt+1} failed for r/{subreddit}: {e}")
+            print(f"  Attempt {attempt+1} failed for submissions with keyword '{keyword}': {e}")
             time.sleep(5)
     return []
 
-# --- Check a post for keywords --- 
-# AND match — every word in the phrase must appear somewhere in the text, but not necessarily together
-# comparable method to how Google Alerts matches keywords in its results
 def find_keywords(text):
     haystack = text if CASE_SENSITIVE else text.lower()
     matched = []
@@ -195,28 +205,76 @@ def find_keywords(text):
             matched.append(kw)
     return matched
 
-# check comments for keywords
 def fetch_comments(post_id):
-    url = f"https://www.reddit.com/comments/{post_id}.json"
+    params = {"link_id": post_id, "size": 100}
     for attempt in range(3):
         try:
-            response = requests.get(url, headers=HEADERS, timeout=10)
+            response = requests.get(PULLPUSH_COMMENT_URL, params=params, headers=HEADERS, timeout=30)
             if response.status_code == 429:
-                wait = int(response.headers.get("Retry-After", 10))
-                print(f"  Rate limited — waiting {wait}s...")
-                time.sleep(wait)
+                print(f"  Rate limited — waiting 30s...")
+                time.sleep(30)
                 continue
             response.raise_for_status()
-            comments = response.json()[1]["data"]["children"]
-            return " ".join(
-                c["data"].get("body", "")
-                for c in comments
-                if c["kind"] == "t1"
-            )
+            comments = response.json().get("data", [])
+            return " ".join(c.get("body", "") for c in comments)
         except Exception as e:
-            print(f"  Error fetching comments for {post_id}: {e}")
+            print(f"  Attempt {attempt+1} failed for comments with post ID '{post_id}': {e}")
             time.sleep(5)
     return ""
+
+# Note: may 30th Reddit's API has become more restrictive, and many endpoints now require authentication or are behind paywalls.
+# # --- Fetch posts from a subreddit (with retry on rate limit) ---
+# def fetch_posts(subreddit):
+#     url = f"https://www.reddit.com/r/{subreddit}/new.json?limit={SEARCH_SIZE}"
+#     for attempt in range(3):
+#         try:
+#             response = requests.get(url, headers=HEADERS, timeout=10)
+#             if response.status_code == 429:
+#                 wait = int(response.headers.get("Retry-After", 10))
+#                 print(f"  Rate limited — waiting {wait}s...")
+#                 time.sleep(wait)
+#                 continue
+#             response.raise_for_status()
+#             return [p["data"] for p in response.json()["data"]["children"]]
+#         except Exception as e:
+#             print(f"  Attempt {attempt+1} failed for r/{subreddit}: {e}")
+#             time.sleep(5)
+#     return []
+
+# # --- Check a post for keywords --- 
+# # AND match — every word in the phrase must appear somewhere in the text, but not necessarily together
+# # comparable method to how Google Alerts matches keywords in its results
+# def find_keywords(text):
+#     haystack = text if CASE_SENSITIVE else text.lower()
+#     matched = []
+#     for kw in KEYWORDS:
+#         words = kw.lower().split()
+#         if all(word in haystack for word in words):
+#             matched.append(kw)
+#     return matched
+
+# # check comments for keywords
+# def fetch_comments(post_id):
+#     url = f"https://www.reddit.com/comments/{post_id}.json"
+#     for attempt in range(3):
+#         try:
+#             response = requests.get(url, headers=HEADERS, timeout=10)
+#             if response.status_code == 429:
+#                 wait = int(response.headers.get("Retry-After", 10))
+#                 print(f"  Rate limited — waiting {wait}s...")
+#                 time.sleep(wait)
+#                 continue
+#             response.raise_for_status()
+#             comments = response.json()[1]["data"]["children"]
+#             return " ".join(
+#                 c["data"].get("body", "")
+#                 for c in comments
+#                 if c["kind"] == "t1"
+#             )
+#         except Exception as e:
+#             print(f"  Error fetching comments for {post_id}: {e}")
+#             time.sleep(5)
+#     return ""
 
 # --- Google Sheets related functions
 def get_sheet():
@@ -259,41 +317,55 @@ def upload_to_sheets(new_rows):
     print(f"  ✓ {len(rows_to_append)} rows appended to '{SHEET_TAB_NAME}' in '{SPREADSHEET_NAME}'")
 
 # --- Main scan ---
-print(f"\nScan started at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-print(f"Monitoring {len(SUBREDDITS)} subreddits for {len(KEYWORDS)} keywords\n")
+print(f"\nScan started at {datetime.now(AEST).strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"Searching {len(KEYWORDS)} keywords via PullPush, filtering to {len(SUBREDDITS)} subreddits\n")
 
 new_rows = []
+seen_this_scan = set()  # track IDs seen in this run to avoid duplicates within the same scan
 
-for sub in SUBREDDITS:
-    print(f"Scanning r/{sub}...")
-    posts = fetch_posts(sub)
+for keyword in KEYWORDS:
+    print(f"  Searching for keyword '{keyword}'...")
+    submissions = fetch_submissions(keyword)
     matches = 0
 
-    for post in posts:
-        if post["id"] in seen_ids:
+    for post in submissions:
+        post_id = post.get("id")
+        if not post_id:
+            continue
+
+        #skip posts not in target subreddits (PullPush returns results from all subreddits, so we filter client-side)
+        sub = post.get("subreddit", "")
+        if sub.lower() not in SUBREDDITS_LOWER:
+            continue
+
+        #skip if we've already seen this post in a previous scan or earlier in this scan
+        if post_id in seen_ids or post_id in seen_this_scan:
             continue
 
         post_text = post.get("title", "") + " " + post.get("selftext", "")
         post_hits = find_keywords(post_text)
 
         if post_hits:
-            matches += 1
-            seen_ids.add(post["id"])
+            matches +=1
+            seen_this_scan.add(post_id)
+            seen_ids.add(post_id)  # add to global seen IDs to prevent future duplicates in this and future scans
 
             # Fetch comments for matched posts only
-            print(f"  Match found — fetching comments for post {post['id']}...")
-            comment_text = fetch_comments(post["id"])
+            print(f"  Match found in r/{sub} — fetching comments for post {post_id}...")
+            comment_text = fetch_comments(post_id)
             comment_hits = find_keywords(comment_text)
             time.sleep(SLEEP_BETWEEN_REQUESTS)
 
             all_hits = list(dict.fromkeys(post_hits + comment_hits))  # deduplicated, order preserved
 
+            created = post.get("created_utc", 0)
+
             new_rows.append({
-                "timestamp":        datetime.now(timezone.utc).isoformat(), #when script found post
-                "post_id":          post["id"], #reddit's unique id for post -- avoid duplication across scans, is what's used in seen_ids
+                "timestamp":        datetime.now(AEST).isoformat(), #when script found post
+                "post_id":          post_id, #reddit's unique id for post -- avoid duplication across scans, is what's used in seen_ids
                 "platform":         "Reddit", #to differentiate from later platforms, e.g. Youtube and Inoreader/Google Alerts
                 "subreddit":        sub, # which subreddit post came from
-                "title":            post["title"], #post title is what's searched against keywords
+                "title":            post.get("title", ""), #post title is what's searched against keywords
                 "keywords_matched": ", ".join(all_hits), #which keywords triggered match
                 "match_count":      len(all_hits), #how many keywords matched, measures relevance
                 "keywords_in_post":     ", ".join(post_hits),
@@ -302,14 +374,13 @@ for sub in SUBREDDITS:
                 "num_comments":     post.get("num_comments", 0),
                 "author":           post.get("author", ""), #reddit username of poster
                 "url":              "https://reddit.com" + post.get("permalink", ""),
-                "created_utc":      datetime.fromtimestamp(
-                                        post["created_utc"],
-                                        tz=timezone.utc
-                                    ).isoformat(), #when post was originally made in reddit
+                "created_utc":      datetime.fromtimestamp(created, tz=AEST).isoformat(), #when post was created, converted to local time
             })
 
-    print(f"  {len(posts)} posts scanned, {matches} matches")
+    print(f"  {len(submissions)} total posts scanned, {matches} matches found.")
     time.sleep(SLEEP_BETWEEN_REQUESTS)
+
+
 
 new_rows.sort(key=lambda x: x["match_count"], reverse=True) #sort results by relevance (number of keywords matched) before saving
 
@@ -347,4 +418,4 @@ except Exception as e:
 with open(SEEN_IDS_FILE, "w") as f:
     f.write("\n".join(seen_ids))
 
-print(f"Scan complete at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+print(f"Scan complete at {datetime.now(AEST).strftime('%Y-%m-%d %H:%M:%S')}\n")
