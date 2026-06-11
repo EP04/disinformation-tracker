@@ -184,7 +184,7 @@ def fetch_submissions(keyword):
     }
     for attempt in range(3):
         try:
-            response = requests.get(PULLPUSH_SUBMISSION_URL, params=params, headers=HEADERS,timeout=30)
+            response = requests.get(PULLPUSH_SUBMISSION_URL, params=params, headers=HEADERS,timeout=60)
             if response.status_code == 429:
                 print(f"  Rate limited — waiting 30s...")
                 time.sleep(30)
@@ -209,7 +209,7 @@ def fetch_comments(post_id):
     params = {"link_id": post_id, "size": 100}
     for attempt in range(3):
         try:
-            response = requests.get(PULLPUSH_COMMENT_URL, params=params, headers=HEADERS, timeout=30)
+            response = requests.get(PULLPUSH_COMMENT_URL, params=params, headers=HEADERS, timeout=60)
             if response.status_code == 429:
                 print(f"  Rate limited — waiting 30s...")
                 time.sleep(30)
