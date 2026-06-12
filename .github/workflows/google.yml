@@ -1,14 +1,26 @@
-name: Test Google Alerts Access
+name: Google Alerts Monitor
+
 on:
+  schedule:
+    - cron: '30 4,13,20 * * *'   # 2:30pm, 11:30pm, 6:30am AEST daily (every 8 hours)
   workflow_dispatch:
+
 jobs:
-  test:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install feedparser
-      - run: |
-          python -c "import feedparser; f=feedparser.parse('https://www.google.com.au/alerts/feeds/09388527107749816884/5903418040278885156'); print('status:', f.get('status')); print('entries:', len(f.entries))"
+      - run: pip install feedparser pandas gspread google-auth google-auth-oauthlib
+      - run: echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+      - run: echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
+      - run: python google_monitor.py
+      - name: Save seen_ids and results back to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add google_alerts_seen_ids.txt google_alerts_results_all.csv || true
+          git diff --staged --quiet || git commit -m "update google alerts results [skip ci]"
+          git push
