@@ -18,131 +18,33 @@ def load_csv_column(filename, column):
         reader = csv.DictReader(f)
         return [row[column].strip() for row in reader if row[column].strip()]
     
-KEYWORDS = load_csv_column("keywords.csv", "keyword")
+# KEYWORDS = load_csv_column("keywords.csv", "keyword")
+def load_keywords(filename):
+    keywords, weights = [], {}
+    with open(filename, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            kw = row["keyword"].strip()
+            if not kw:
+                continue
+            keywords.append(kw)
+            try:
+                weights[kw.lower()] = int(row.get("weight", 1) or 1)
+            except ValueError:
+                weights[kw.lower()] = 1
+    return keywords, weights
+
+
+KEYWORDS, KEYWORD_WEIGHTS = load_keywords("keywords.csv")
+
+def relevance_weight(matched_keywords):
+    return sum(KEYWORD_WEIGHTS.get(kw.lower(), 1) for kw in matched_keywords)
+
 SUBREDDITS = load_csv_column("subreddits.csv", "subreddit")
-
-# # --- Configuration ---
-# SUBREDDITS = [
-#     # News & politics — highest yield
-#     "australia",
-#     "AustralianPolitics",
-#     "AusPol",
-#     "AusNews",
-#     "AusPolitics",
-#     "AustraliaLeftPolitics",
-#     "AusLeftPolitics",
-#     "NeutralAustralia",
-#     "LNPCorruption",
-#     "MetaAusPol",
-#     "AusPublicService",  
-#     "friendlyjordies",   
-
-#     # COVID & health — most directly relevant
-#     "CoronavirusAustralia",
-#     "CoronavirusDownunder",
-#     "CoronavirusStraya",
-#     "Covid19Australia",
-#     "covidWA",
-#     "LockdownSkepticismAU",
-#     "NDIS",              
-#     "ausjdocs",          
-#     "CentrelinkOz",
-
-#     # Skepticism, alternative health, libertarian — likely hotspots
-#     "AussieLibertarians",
-#     "libertarianaustralia",
-#     "MedicalCannabisAus",
-#     "MedicalCannabisOz",
-#     "DrugsAustralia",
-#     "apskeptic",
-
-#     # General large communities
-#     "straya",
-#     "aussie", #not picked up in AusReddit list, manually added
-#     "aus",
-#     "AskAnAustralian",
-#     "regionalaustralia",
-#     "AusFinance",        
-#     "AusLegal",          
-#     "australian",        
-#     "AustralianTeachers",
-
-#     # Capital cities
-#     "sydney",
-#     "melbourne",
-#     "brisbane",
-#     "perth",
-#     "Adelaide",
-#     "canberra",
-#     "hobart",
-#     "darwin",
-
-#     # States & territories
-#     "queensland",
-#     "nsw",
-#     "vic",
-#     "southaustralia",
-#     "WesternAustralia",
-#     "tasmania",
-#     "northernterritory",
-
-#     # Towns & regional cities
-#     "Cairns",
-#     "Townsville",
-#     "Toowoomba",
-#     "GoldCoast",
-#     "sunshinecoast",
-#     "rockhampton",
-#     "CentralQueensland",
-#     "GympieQLD", #not picked up in AusReddit list, manually added
-#     "Mackay",
-#     "Launceston",
-#     "HuonValley",
-#     "newcastle",
-#     "Nowra",
-#     "CoffsHarbour",
-#     "centralcoastnsw",
-#     "MidNorthCoastNSW",
-#     "Armidale",
-#     "albury",
-#     "Cessnock",
-#     "newtown",
-#     "ballarat",
-#     "Bendigo",
-#     "Geelong",
-#     "gippsland",
-#     "shepparton",
-#     "warrnambool",
-#     "Mildura",
-#     "bluemountains",
-#     "frankston",
-#     "mandurah",
-#     "rockingham",
-#     "albanywa",
-#     "Broome",
-#     "BrokenHill",
-#     "DarwinAustralia",
-#     "ipswich",
-#     "tweedshire",
-#     "wollongong",
-#     "NorfolkIsland",
-#     "Gungahlin",
-#     "belconnen",
-#     "altona",
-#     "Wodonga", #not picked up in AusReddit list, manually added
-# ]
 
 # Lowercase set for fast, case-insensitive subreddit filtering
 SUBREDDITS_LOWER = {s.lower() for s in SUBREDDITS}
 
-# KEYWORDS = [
-#     #fluoridation
-#     "fluoridation", "fluoride", "fluoride free australia",
-#     "fluoride water filter", "fluoride byproduct", "fluoride thyroid", "mass medication fluoride",
-#     #vaccination
-#     "vaccination", "vaccine", "selective vaccine schedule", "pharma vaccine lying", "vaccine autism parent group", 
-#     "vaccine death data", "vaccine less than natural immunity",
-# ]
 
 SEARCH_SIZE = 100          # posts to fetch per subreddit
 CASE_SENSITIVE = False
@@ -173,7 +75,7 @@ SEEN_IDS_FILE = "seen_ids.txt"
 COLUMNS = [
     "timestamp", "post_id", "platform", "subreddit", "title",
     "keywords_matched", "match_count", "keywords_in_post", "keywords_in_comments",
-    "score", "num_comments", "author", "url", "created_utc",
+    "score", "num_comments", "author", "url", "created_aest", "relevance_weight",
 ]
 
 # --- Load seen IDs to avoid duplicates across scans ---
@@ -230,60 +132,6 @@ def fetch_comments(post_id):
             print(f"  Attempt {attempt+1} failed for comments with post ID '{post_id}': {e}")
             time.sleep(5)
     return ""
-
-# Note: may 30th Reddit's API has become more restrictive, and many endpoints now require authentication or are behind paywalls.
-# # --- Fetch posts from a subreddit (with retry on rate limit) ---
-# def fetch_posts(subreddit):
-#     url = f"https://www.reddit.com/r/{subreddit}/new.json?limit={SEARCH_SIZE}"
-#     for attempt in range(3):
-#         try:
-#             response = requests.get(url, headers=HEADERS, timeout=10)
-#             if response.status_code == 429:
-#                 wait = int(response.headers.get("Retry-After", 10))
-#                 print(f"  Rate limited — waiting {wait}s...")
-#                 time.sleep(wait)
-#                 continue
-#             response.raise_for_status()
-#             return [p["data"] for p in response.json()["data"]["children"]]
-#         except Exception as e:
-#             print(f"  Attempt {attempt+1} failed for r/{subreddit}: {e}")
-#             time.sleep(5)
-#     return []
-
-# # --- Check a post for keywords --- 
-# # AND match — every word in the phrase must appear somewhere in the text, but not necessarily together
-# # comparable method to how Google Alerts matches keywords in its results
-# def find_keywords(text):
-#     haystack = text if CASE_SENSITIVE else text.lower()
-#     matched = []
-#     for kw in KEYWORDS:
-#         words = kw.lower().split()
-#         if all(word in haystack for word in words):
-#             matched.append(kw)
-#     return matched
-
-# # check comments for keywords
-# def fetch_comments(post_id):
-#     url = f"https://www.reddit.com/comments/{post_id}.json"
-#     for attempt in range(3):
-#         try:
-#             response = requests.get(url, headers=HEADERS, timeout=10)
-#             if response.status_code == 429:
-#                 wait = int(response.headers.get("Retry-After", 10))
-#                 print(f"  Rate limited — waiting {wait}s...")
-#                 time.sleep(wait)
-#                 continue
-#             response.raise_for_status()
-#             comments = response.json()[1]["data"]["children"]
-#             return " ".join(
-#                 c["data"].get("body", "")
-#                 for c in comments
-#                 if c["kind"] == "t1"
-#             )
-#         except Exception as e:
-#             print(f"  Error fetching comments for {post_id}: {e}")
-#             time.sleep(5)
-#     return ""
 
 # --- Google Sheets related functions
 def get_sheet():
@@ -383,7 +231,8 @@ for keyword in KEYWORDS:
                 "num_comments":     post.get("num_comments", 0),
                 "author":           post.get("author", ""), #reddit username of poster
                 "url":              "https://reddit.com" + post.get("permalink", ""),
-                "created_utc":      datetime.fromtimestamp(created, tz=AEST).isoformat(), #when post was created, converted to local time
+                "created_aest":      datetime.fromtimestamp(created, tz=AEST).isoformat(), #when post was created, converted to local time
+                "relevance_weight": relevance_weight(all_hits), #weighted relevance score based on keywords matched
             })
 
     print(f"  {len(submissions)} total posts scanned, {matches} matches found.")
