@@ -1,3 +1,4 @@
+import csv
 import requests
 import pandas as pd
 import time
@@ -12,128 +13,136 @@ from google.auth.transport.requests import Request
 
 AEST = ZoneInfo("Australia/Sydney")  # for timestamping in local time
 
-# --- Configuration ---
-SUBREDDITS = [
-    # News & politics — highest yield
-    "australia",
-    "AustralianPolitics",
-    "AusPol",
-    "AusNews",
-    "AusPolitics",
-    "AustraliaLeftPolitics",
-    "AusLeftPolitics",
-    "NeutralAustralia",
-    "LNPCorruption",
-    "MetaAusPol",
-    "AusPublicService",  
-    "friendlyjordies",   
+def load_csv_column(filename, column):
+    with open(filename, newline="", encoding = "utf-8") as f:
+        reader = csv.DictReader(f)
+        return [row[column].strip() for row in reader if row[column].strip()]
+    
+KEYWORDS = load_csv_column("keywords.csv", "keyword")
+SUBREDDITS = load_csv_column("subreddits.csv", "subreddit")
 
-    # COVID & health — most directly relevant
-    "CoronavirusAustralia",
-    "CoronavirusDownunder",
-    "CoronavirusStraya",
-    "Covid19Australia",
-    "covidWA",
-    "LockdownSkepticismAU",
-    "NDIS",              
-    "ausjdocs",          
-    "CentrelinkOz",
+# # --- Configuration ---
+# SUBREDDITS = [
+#     # News & politics — highest yield
+#     "australia",
+#     "AustralianPolitics",
+#     "AusPol",
+#     "AusNews",
+#     "AusPolitics",
+#     "AustraliaLeftPolitics",
+#     "AusLeftPolitics",
+#     "NeutralAustralia",
+#     "LNPCorruption",
+#     "MetaAusPol",
+#     "AusPublicService",  
+#     "friendlyjordies",   
 
-    # Skepticism, alternative health, libertarian — likely hotspots
-    "AussieLibertarians",
-    "libertarianaustralia",
-    "MedicalCannabisAus",
-    "MedicalCannabisOz",
-    "DrugsAustralia",
-    "apskeptic",
+#     # COVID & health — most directly relevant
+#     "CoronavirusAustralia",
+#     "CoronavirusDownunder",
+#     "CoronavirusStraya",
+#     "Covid19Australia",
+#     "covidWA",
+#     "LockdownSkepticismAU",
+#     "NDIS",              
+#     "ausjdocs",          
+#     "CentrelinkOz",
 
-    # General large communities
-    "straya",
-    "aussie", #not picked up in AusReddit list, manually added
-    "aus",
-    "AskAnAustralian",
-    "regionalaustralia",
-    "AusFinance",        
-    "AusLegal",          
-    "australian",        
-    "AustralianTeachers",
+#     # Skepticism, alternative health, libertarian — likely hotspots
+#     "AussieLibertarians",
+#     "libertarianaustralia",
+#     "MedicalCannabisAus",
+#     "MedicalCannabisOz",
+#     "DrugsAustralia",
+#     "apskeptic",
 
-    # Capital cities
-    "sydney",
-    "melbourne",
-    "brisbane",
-    "perth",
-    "Adelaide",
-    "canberra",
-    "hobart",
-    "darwin",
+#     # General large communities
+#     "straya",
+#     "aussie", #not picked up in AusReddit list, manually added
+#     "aus",
+#     "AskAnAustralian",
+#     "regionalaustralia",
+#     "AusFinance",        
+#     "AusLegal",          
+#     "australian",        
+#     "AustralianTeachers",
 
-    # States & territories
-    "queensland",
-    "nsw",
-    "vic",
-    "southaustralia",
-    "WesternAustralia",
-    "tasmania",
-    "northernterritory",
+#     # Capital cities
+#     "sydney",
+#     "melbourne",
+#     "brisbane",
+#     "perth",
+#     "Adelaide",
+#     "canberra",
+#     "hobart",
+#     "darwin",
 
-    # Towns & regional cities
-    "Cairns",
-    "Townsville",
-    "Toowoomba",
-    "GoldCoast",
-    "sunshinecoast",
-    "rockhampton",
-    "CentralQueensland",
-    "GympieQLD", #not picked up in AusReddit list, manually added
-    "Mackay",
-    "Launceston",
-    "HuonValley",
-    "newcastle",
-    "Nowra",
-    "CoffsHarbour",
-    "centralcoastnsw",
-    "MidNorthCoastNSW",
-    "Armidale",
-    "albury",
-    "Cessnock",
-    "newtown",
-    "ballarat",
-    "Bendigo",
-    "Geelong",
-    "gippsland",
-    "shepparton",
-    "warrnambool",
-    "Mildura",
-    "bluemountains",
-    "frankston",
-    "mandurah",
-    "rockingham",
-    "albanywa",
-    "Broome",
-    "BrokenHill",
-    "DarwinAustralia",
-    "ipswich",
-    "tweedshire",
-    "wollongong",
-    "NorfolkIsland",
-    "Gungahlin",
-    "belconnen",
-    "altona",
-    "Wodonga", #not picked up in AusReddit list, manually added
-]
+#     # States & territories
+#     "queensland",
+#     "nsw",
+#     "vic",
+#     "southaustralia",
+#     "WesternAustralia",
+#     "tasmania",
+#     "northernterritory",
+
+#     # Towns & regional cities
+#     "Cairns",
+#     "Townsville",
+#     "Toowoomba",
+#     "GoldCoast",
+#     "sunshinecoast",
+#     "rockhampton",
+#     "CentralQueensland",
+#     "GympieQLD", #not picked up in AusReddit list, manually added
+#     "Mackay",
+#     "Launceston",
+#     "HuonValley",
+#     "newcastle",
+#     "Nowra",
+#     "CoffsHarbour",
+#     "centralcoastnsw",
+#     "MidNorthCoastNSW",
+#     "Armidale",
+#     "albury",
+#     "Cessnock",
+#     "newtown",
+#     "ballarat",
+#     "Bendigo",
+#     "Geelong",
+#     "gippsland",
+#     "shepparton",
+#     "warrnambool",
+#     "Mildura",
+#     "bluemountains",
+#     "frankston",
+#     "mandurah",
+#     "rockingham",
+#     "albanywa",
+#     "Broome",
+#     "BrokenHill",
+#     "DarwinAustralia",
+#     "ipswich",
+#     "tweedshire",
+#     "wollongong",
+#     "NorfolkIsland",
+#     "Gungahlin",
+#     "belconnen",
+#     "altona",
+#     "Wodonga", #not picked up in AusReddit list, manually added
+# ]
 
 # Lowercase set for fast, case-insensitive subreddit filtering
 SUBREDDITS_LOWER = {s.lower() for s in SUBREDDITS}
 
-KEYWORDS = [
-    #fluoridation
-    "fluoridation", "fluoride", "fluoride free australia",
-    "fluoride water filter", "fluoride byproduct", "fluoride thyroid", "mass medication fluoride",
-    #vaccination
-    "vaccination", "vaccine", "selective vaccine schedule", "pharma vaccine lying", "vaccine autism parent group", 
-    "vaccine death data", "vaccine less than natural immunity",
-]
+# KEYWORDS = [
+#     #fluoridation
+#     "fluoridation", "fluoride", "fluoride free australia",
+#     "fluoride water filter", "fluoride byproduct", "fluoride thyroid", "mass medication fluoride",
+#     #vaccination
+#     "vaccination", "vaccine", "selective vaccine schedule", "pharma vaccine lying", "vaccine autism parent group", 
+#     "vaccine death data", "vaccine less than natural immunity",
+# ]
 
 SEARCH_SIZE = 100          # posts to fetch per subreddit
 CASE_SENSITIVE = False

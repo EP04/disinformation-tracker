@@ -2,7 +2,7 @@ name: Reddit Monitor
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # runs at midnight and noon UTC every day
+    - cron: '0 0 * * *'  # runs at midnight UTC (10am AEST) every day
   workflow_dispatch:          # lets you trigger it manually from GitHub for testing
 
 jobs:
