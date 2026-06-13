@@ -1,0 +1,47 @@
+name: YouTube Monitor
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 11am AEST daily (01:00 UTC)
+  workflow_dispatch:        # lets you trigger it manually from GitHub for testing
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas gspread google-auth google-auth-oauthlib python-dotenv
+
+      - name: Write credentials.json from secret
+        run: echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+
+      - name: Write token.json from secret
+        run: echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
+
+      - name: Run YouTube monitor (bare keywords)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          APPEND_AUSTRALIA: "false"
+        run: python youtube_monitor.py
+
+      - name: Run YouTube monitor (keywords + australia)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          APPEND_AUSTRALIA: "true"
+        run: python youtube_monitor.py
+
+      - name: Save seen_ids and results back to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add youtube_seen_ids.txt youtube_au_seen_ids.txt youtube_results_all.csv youtube_results_au_all.csv || true
+          git diff --staged --quiet || git commit -m "update youtube results [skip ci]"
+          git push
