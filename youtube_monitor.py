@@ -44,7 +44,10 @@ def relevance_weight(matched_keywords):
     return sum(KEYWORD_WEIGHTS.get(kw.lower(), 1) for kw in matched_keywords)
 
 #Configuration
-#APPEND_AUSTRALIA = False   # set True to append " australia" to each search query
+#Append Australia would add " australia" to each keyword, which I want to compare to the non-append version
+#as the non-append version even with region set to AU is still surfacing global content
+#keywords matched for the append-australia version will still show the non-append keyword
+# way to differentiate if " australia" was appended to keyword is in the "Platform" column in the output - "YouTube AU" vs "YouTube"
 APPEND_AUSTRALIA = os.environ.get("APPEND_AUSTRALIA", "false").lower() == "true"
 CASE_SENSITIVE = False
 RESULTS_PER_KEYWORD = 25
