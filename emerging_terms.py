@@ -51,6 +51,7 @@ MIN_POSTS   = 3     # appears in >= this many distinct posts (the volume signal)
 
 UPLOAD_TO_SHEETS = True                 # flip on to push the latest snapshot back to the sheet
 OUTPUT_TAB_NAME  = "Emerging Terms"
+OUTPUT_AUTHORS_TAB  = "Emerging Authors"   # term x author breakdown
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive"]
@@ -223,19 +224,21 @@ def main():
     print(out.head(15).to_string(index=False))
 
     if UPLOAD_TO_SHEETS:
-        upload_to_sheets(out)
+        upload_to_sheets(out, OUTPUT_TAB_NAME)
+        upload_to_sheets(ba, OUTPUT_AUTHORS_TAB)
 
 
-def upload_to_sheets(df):
-    """Optional: push the latest snapshot to an Emerging Terms tab in the sheet."""
+def upload_to_sheets(df, tab_name):
+    """Push a dataframe to a named tab. clear() + rewrite, so the tab never
+    accumulates duplicates — each run fully replaces its contents."""
     sh = gspread.authorize(_get_creds()).open(SPREADSHEET_NAME)
     try:
-        ws = sh.worksheet(OUTPUT_TAB_NAME)
+        ws = sh.worksheet(tab_name)
     except gspread.WorksheetNotFound:
-        ws = sh.add_worksheet(title=OUTPUT_TAB_NAME, rows=2000, cols=10)
+        ws = sh.add_worksheet(title=tab_name, rows=2000, cols=10)
     ws.clear()
     ws.update([df.columns.tolist()] + df.astype(str).values.tolist())
-    print(f"  uploaded {len(df)} rows to '{OUTPUT_TAB_NAME}'")
+    print(f"  uploaded {len(df)} rows to '{tab_name}'")
 
 
 if __name__ == "__main__":
