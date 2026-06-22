@@ -98,6 +98,12 @@ def load_stopwords():
                 extra.add(v)
     return extra
 
+def created_date(val):
+    """First 10 chars of an ISO created_aest -> 'YYYY-MM-DD', or '' if unparseable.
+    String form sorts chronologically, so min() over these gives the earliest date."""
+    m = re.match(r"(\d{4}-\d{2}-\d{2})", str(val).strip())
+    return m.group(1) if m else ""
+
 
 def _get_creds():
     """Shared OAuth handling — identical pattern to the scrapers' get_sheet()."""
@@ -174,18 +180,31 @@ def main():
     platforms = defaultdict(set)
     ttype = {}
     by_author = Counter()
+    ba_platforms = defaultdict(set)        # (term, author) -> platforms
+    term_first = {}                        # term          -> earliest created date
+    ba_first = {}                          # (term, author) -> earliest created date
+
+    def note(t, a):
+        ba_platforms[(t, a)].add(p)
+        if cd:
+            if t not in term_first or cd < term_first[t]:
+                term_first[t] = cd
+            k = (t, a)
+            if k not in ba_first or cd < ba_first[k]:
+                ba_first[k] = cd
 
     for _, row in df.iterrows():
         text = " ".join(str(row.get(c, "")) for c in TEXT_FIELDS)
         uni, bi = tokenize(text, stop, tracked)
         a = str(row["author"])
         p = str(row.get("platform", ""))
+        cd = created_date(row.get("created_aest", "")) 
         for t in set(uni):
             posts[t] += 1; authors[t].add(a); platforms[t].add(p); ttype[t] = "word"
-            by_author[(t, a)] += 1
+            by_author[(t, a)] += 1; note(t, a) 
         for t in set(bi):
             posts[t] += 1; authors[t].add(a); platforms[t].add(p); ttype[t] = "phrase"
-            by_author[(t, a)] += 1
+            by_author[(t, a)] += 1; note(t, a) 
 
     rows = []
     for t, n in posts.items():
@@ -193,6 +212,7 @@ def main():
         if na >= MIN_AUTHORS and n >= MIN_POSTS:
             rows.append({
                 "run_date": run_date,
+                "first_created_aest": term_first.get(t, ""),
                 "term": t,
                 "type": ttype[t],
                 "distinct_authors": na,
@@ -205,16 +225,24 @@ def main():
     out.to_csv("emerging_terms_latest.csv", index=False)
     print(f"\n  {len(out)} candidate terms -> emerging_terms_latest.csv")
 
+
     hist = "emerging_terms_history.csv"
-    out.to_csv(hist, mode="a", header=not os.path.exists(hist), index=False)
+    if os.path.exists(hist):
+        hist_df = pd.concat([pd.read_csv(hist), out], ignore_index=True)
+    else:
+        hist_df = out.copy()
     # dedupe history in case of re-runs on the same day, but recurrences across diff days are preserved as that shows trend
-    hist_df = pd.read_csv(hist).drop_duplicates(subset=["run_date", "term"], keep="last")
+    hist_df = hist_df.drop_duplicates(subset=["run_date", "term"], keep="last")
     hist_df.to_csv(hist, index=False)
-    print(f"  history now {len(hist_df)} rows -> {hist}")
 
     kept = set(out["term"])
     ba = pd.DataFrame(
-        [{"run_date": run_date, "term": t, "author": a, "posts": c}
+        [{"run_date": run_date,
+          "first_created_aest": ba_first.get((t, a), ""),        # NEW
+          "term": t,
+          "author": a,
+          "posts": c,
+          "platforms": ", ".join(sorted(ba_platforms[(t, a)]))}  # NEW
          for (t, a), c in by_author.items() if t in kept]
     ).sort_values(["term", "posts"], ascending=[True, False])
     ba.to_csv("emerging_terms_by_author.csv", index=False)
