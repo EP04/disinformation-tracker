@@ -20,3 +20,6 @@ The prototype's data pipeline changed substantially mid-project, creating a data
 4. Split the keywords_matched cell in "Master2": This cell currently combines all matched keywords together. I recommend splitting it into individual keyword matches, but not having that new field wholly replace the existing one. It would be good to have both fields to retain the topic-level view while gaining the ability to drill into any single term.
 a. agg_keyword_match (the current keywords_matched): preserves which combinations of keywords appear together, giving a view of topics by keyword co-occurrence.
 b. individual_keyword_match (the proposed new field): breaks matches out one keyword per row, enabling trend analysis for a single specific keyword (for example, tracking it by author or platform over time).
+
+**Systems diagram of files in the repo:**
+![There is a Python script that analyses the Master tab, and aims to capture emerging misinformation trends by logging the words that are not in the keyword list but are appearing in collated titles. The Google Sheet connects to Google Data Studio to display the data as charts on a dashboard.](Prototype systems diagram (2).png)
