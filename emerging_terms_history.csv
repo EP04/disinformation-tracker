@@ -6872,3 +6872,1254 @@ run_date,term,type,distinct_authors,posts,platforms,first_created_aest
 2026-06-28,karl stefanovic,phrase,2,3,Google Alerts,2026-06-26
 2026-06-28,sudan,word,2,3,Google Alerts,2026-06-27
 2026-06-28,south sudan,phrase,2,3,Google Alerts,2026-06-27
+2026-06-29,shorts,word,118,171,"YouTube, YouTube AU",2022-02-14
+2026-06-29,covid,word,82,126,"Google Alerts, Reddit, YouTube, YouTube AU",2020-03-23
+2026-06-29,health,word,79,107,"Google Alerts, Reddit, YouTube, YouTube AU",2021-06-29
+2026-06-29,flu,word,75,123,"Google Alerts, YouTube, YouTube AU",2026-03-23
+2026-06-29,toothpaste,word,73,86,"Google Alerts, YouTube, YouTube AU",2018-10-13
+2026-06-29,vaccines,word,70,83,"Google Alerts, Reddit, YouTube, YouTube AU",2020-03-23
+2026-06-29,baby,word,52,61,"Google Alerts, YouTube",2025-06-29
+2026-06-29,new,word,41,50,"Google Alerts, Reddit, YouTube, YouTube AU",2021-01-10
+2026-06-29,viral,word,40,50,"Google Alerts, YouTube",2026-06-13
+2026-06-29,polio,word,39,39,YouTube,2026-06-19
+2026-06-29,news,word,37,148,"Google Alerts, Reddit, YouTube, YouTube AU",2021-04-16
+2026-06-29,covid vaccine,phrase,37,40,"Google Alerts, Reddit, YouTube, YouTube AU",2020-09-07
+2026-06-29,day,word,37,39,"Google Alerts, YouTube, YouTube AU",2025-12-27
+2026-06-29,vaccinations,word,34,43,"Google Alerts, Reddit, YouTube, YouTube AU",2021-09-12
+2026-06-29,fried,word,32,58,YouTube,2026-06-13
+2026-06-29,fried fluoride,phrase,32,58,YouTube,2026-06-13
+2026-06-29,first,word,32,41,"Google Alerts, YouTube",2026-06-12
+2026-06-29,get,word,30,36,"Google Alerts, Reddit, YouTube, YouTube AU",2025-12-09
+2026-06-29,cancer,word,29,37,"Google Alerts, YouTube, YouTube AU",2024-06-29
+2026-06-29,deaths,word,29,32,"Google Alerts, YouTube, YouTube AU",2021-01-17
+2026-06-29,australian,word,27,44,"Google Alerts, Reddit, YouTube AU",2010-10-08
+2026-06-29,study,word,26,31,"Google Alerts, Reddit, YouTube, YouTube AU",2022-05-26
+2026-06-29,kids,word,25,31,"Google Alerts, Reddit, YouTube, YouTube AU",2013-05-07
+2026-06-29,fluoride-free,word,25,28,"Google Alerts, YouTube, YouTube AU",2018-10-13
+2026-06-29,one,word,25,27,"Google Alerts, Reddit, YouTube, YouTube AU",2022-01-02
+2026-06-29,trending,word,24,42,YouTube,2026-04-09
+2026-06-29,vaccination day,phrase,24,25,YouTube,2026-06-13
+2026-06-29,truth,word,24,24,"YouTube, YouTube AU",2010-10-10
+2026-06-29,program,word,23,35,"Google Alerts, Reddit, YouTube, YouTube AU",2022-05-23
+2026-06-29,rsv,word,23,33,"Google Alerts, Reddit, YouTube AU",2026-02-04
+2026-06-29,risk,word,23,30,"Google Alerts, Reddit, YouTube",2022-05-26
+2026-06-29,dog,word,23,27,"Google Alerts, YouTube",2026-06-13
+2026-06-29,hpv,word,23,26,"Google Alerts, YouTube, YouTube AU",2026-06-06
+2026-06-29,winter,word,22,40,"Google Alerts, YouTube, YouTube AU",2026-05-01
+2026-06-29,children,word,22,26,"Google Alerts, Reddit, YouTube, YouTube AU",2008-11-04
+2026-06-29,flu vaccine,phrase,22,24,"Google Alerts, YouTube, YouTube AU",2026-05-27
+2026-06-29,outbreak,word,21,30,"Google Alerts, YouTube, YouTube AU",2026-05-21
+2026-06-29,care,word,21,22,"Google Alerts, Reddit, YouTube, YouTube AU",2022-04-06
+2026-06-29,child,word,21,21,"Reddit, YouTube",2025-12-01
+2026-06-29,influenza,word,20,36,"Google Alerts, YouTube, YouTube AU",2026-06-11
+2026-06-29,best,word,20,23,"Google Alerts, YouTube, YouTube AU",2023-12-25
+2026-06-29,teeth,word,20,21,"Google Alerts, YouTube, YouTube AU",2026-05-08
+2026-06-29,medical,word,19,31,"Google Alerts, YouTube, YouTube AU",2025-12-09
+2026-06-29,ytshorts,word,19,21,YouTube,2026-06-14
+2026-06-29,hospital,word,19,21,"Google Alerts, YouTube, YouTube AU",2026-05-14
+2026-06-29,people,word,18,22,"Google Alerts, Reddit, YouTube, YouTube AU",2025-05-23
+2026-06-29,know,word,18,19,"Google Alerts, YouTube, YouTube AU",2019-11-07
+2026-06-29,polio vaccine,phrase,18,18,YouTube,2026-06-19
+2026-06-29,diphtheria,word,17,20,"Google Alerts, YouTube, YouTube AU",2026-05-20
+2026-06-29,review,word,17,19,"Google Alerts, YouTube, YouTube AU",2024-08-12
+2026-06-29,cutebaby,word,17,19,YouTube,2026-06-13
+2026-06-29,youtube,word,16,28,"YouTube, YouTube AU",2026-06-14
+2026-06-29,ebola,word,16,26,"Google Alerts, YouTube, YouTube AU",2026-05-24
+2026-06-29,measles,word,16,21,"Google Alerts, YouTube, YouTube AU",2025-04-01
+2026-06-29,newborn,word,16,20,"Google Alerts, YouTube",2026-06-14
+2026-06-29,cervical,word,16,20,"Google Alerts, YouTube, YouTube AU",2026-06-13
+2026-06-29,cervical cancer,phrase,16,20,"Google Alerts, YouTube, YouTube AU",2026-06-13
+2026-06-29,immunisation,word,15,23,"Google Alerts, YouTube",2026-06-12
+2026-06-29,flu vaccination,phrase,15,20,"Google Alerts, YouTube",2026-06-12
+2026-06-29,today,word,15,19,"Google Alerts, YouTube, YouTube AU",2015-12-25
+2026-06-29,could,word,15,19,"Google Alerts, Reddit, YouTube, YouTube AU",2022-05-23
+2026-06-29,protect,word,15,18,"Google Alerts, YouTube",2025-06-29
+2026-06-29,hpv vaccine,phrase,15,18,"Google Alerts, YouTube, YouTube AU",2026-06-06
+2026-06-29,fluoride toothpaste,phrase,15,17,"Google Alerts, YouTube",2026-05-10
+2026-06-29,doctor,word,15,17,"Google Alerts, Reddit, YouTube, YouTube AU",2022-12-21
+2026-06-29,youtubeshorts,word,15,16,YouTube,2026-06-13
+2026-06-29,science,word,15,16,"Google Alerts, YouTube",2025-12-13
+2026-06-29,hidden,word,15,15,"Google Alerts, YouTube",2025-11-10
+2026-06-29,treatment,word,15,15,"Google Alerts, Reddit, YouTube",2022-05-23
+2026-06-29,injection,word,14,28,"Google Alerts, YouTube",2026-06-12
+2026-06-29,season,word,14,21,"Google Alerts, YouTube, YouTube AU",2026-05-01
+2026-06-29,june,word,14,21,"Google Alerts, YouTube",2026-06-12
+2026-06-29,video,word,14,17,"Google Alerts, YouTube, YouTube AU",2018-01-24
+2026-06-29,stop,word,14,16,"Google Alerts, YouTube, YouTube AU",2015-12-25
+2026-06-29,south,word,14,16,"Google Alerts, Reddit, YouTube AU",2022-01-02
+2026-06-29,public,word,14,15,"Google Alerts, YouTube, YouTube AU",2022-10-08
+2026-06-29,disease,word,14,15,"Google Alerts, Reddit, YouTube",2023-06-24
+2026-06-29,protection,word,14,15,"Google Alerts, YouTube",2026-05-25
+2026-06-29,safe,word,14,15,"Google Alerts, YouTube, YouTube AU",2024-06-17
+2026-06-29,vlog,word,14,14,"YouTube, YouTube AU",2026-05-30
+2026-06-29,alternative,word,14,14,"Google Alerts, YouTube",2009-09-02
+2026-06-29,pulse,word,14,14,"Google Alerts, YouTube",2026-06-16
+2026-06-29,case,word,13,22,"Google Alerts, Reddit, YouTube, YouTube AU",2015-02-24
+2026-06-29,big,word,13,19,"Google Alerts, Reddit, YouTube, YouTube AU",2020-03-23
+2026-06-29,mrna,word,13,17,"Google Alerts, Reddit, YouTube",2021-06-22
+2026-06-29,fda,word,13,14,"Google Alerts, Reddit, YouTube",2025-06-03
+2026-06-29,better,word,13,14,"Google Alerts, YouTube",2021-12-12
+2026-06-29,love,word,13,14,YouTube,2025-06-29
+2026-06-29,drinking,word,13,13,"YouTube, YouTube AU",2012-08-04
+2026-06-29,explained,word,13,13,"Google Alerts, YouTube, YouTube AU",2024-09-01
+2026-06-29,minivlog,word,13,13,YouTube,2026-06-13
+2026-06-29,pulse polio,phrase,13,13,YouTube,2026-06-19
+2026-06-29,polio vaccination,phrase,13,13,YouTube,2026-06-25
+2026-06-29,national,word,12,36,"Google Alerts, YouTube, YouTube AU",2024-06-29
+2026-06-29,bird,word,12,22,Google Alerts,2026-06-20
+2026-06-29,july,word,12,18,"Google Alerts, Reddit",2022-07-05
+2026-06-29,immunization,word,12,17,"Google Alerts, YouTube",2026-06-17
+2026-06-29,may,word,12,17,"Google Alerts, Reddit, YouTube, YouTube AU",2025-05-01
+2026-06-29,dthshow,word,12,15,YouTube,2026-06-17
+2026-06-29,remove,word,12,14,"Google Alerts, YouTube, YouTube AU",2013-02-23
+2026-06-29,every,word,12,12,"Google Alerts, YouTube",2026-06-14
+2026-06-29,lies,word,12,12,"YouTube, YouTube AU",2022-12-05
+2026-06-29,australia's,word,12,12,"Google Alerts, YouTube AU",2016-02-29
+2026-06-29,pharmacy,word,11,25,"Google Alerts, YouTube",2025-05-02
+2026-06-29,type,word,11,21,YouTube,2026-06-13
+2026-06-29,beat,word,11,21,YouTube,2026-06-13
+2026-06-29,type beat,phrase,11,21,YouTube,2026-06-13
+2026-06-29,bird flu,phrase,11,20,Google Alerts,2026-06-20
+2026-06-29,pneumococcal,word,11,19,"Google Alerts, YouTube",2026-06-14
+2026-06-29,part,word,11,16,"Google Alerts, Reddit, YouTube, YouTube AU",2011-05-05
+2026-06-29,hepatitis,word,11,14,"Google Alerts, Reddit, YouTube",2022-04-26
+2026-06-29,supply,word,11,14,"Google Alerts, YouTube, YouTube AU",2013-02-23
+2026-06-29,clinic,word,11,14,"Google Alerts, YouTube",2026-06-14
+2026-06-29,pandemic,word,11,14,"Google Alerts, Reddit, YouTube",2023-09-22
+2026-06-29,free toothpaste,phrase,11,14,"Google Alerts, YouTube, YouTube AU",2022-12-21
+2026-06-29,dthshow youtube,phrase,11,14,YouTube,2026-06-17
+2026-06-29,vaccinated,word,11,14,"Google Alerts, YouTube, YouTube AU",2026-05-01
+2026-06-29,shows,word,11,13,"Google Alerts, Reddit, YouTube",2022-04-05
+2026-06-29,month,word,11,13,"Google Alerts, YouTube, YouTube AU",2022-01-02
+2026-06-29,tap,word,11,12,"Google Alerts, YouTube",2024-04-19
+2026-06-29,fluoride-free toothpaste,phrase,11,12,"Google Alerts, YouTube",2026-06-16
+2026-06-29,rates,word,11,12,"Google Alerts, YouTube, YouTube AU",2025-05-16
+2026-06-29,queensland,word,11,12,"Google Alerts, Reddit, YouTube AU",2014-12-05
+2026-06-29,actually,word,11,11,YouTube,2025-03-02
+2026-06-29,whitening,word,11,11,"Google Alerts, YouTube",2026-06-12
+2026-06-29,drinking water,phrase,11,11,"YouTube, YouTube AU",2012-08-04
+2026-06-29,baby vaccination,phrase,11,11,YouTube,2026-06-13
+2026-06-29,drops,word,11,11,"Google Alerts, YouTube",2026-06-20
+2026-06-29,research,word,10,14,"Google Alerts, YouTube",2026-06-12
+2026-06-29,virus,word,10,14,"Google Alerts, YouTube",2026-06-12
+2026-06-29,western,word,10,14,"Google Alerts, YouTube, YouTube AU",2013-02-12
+2026-06-29,toxic,word,10,13,"YouTube, YouTube AU",2020-11-18
+2026-06-29,years,word,10,12,"Google Alerts, Reddit, YouTube",2025-05-18
+2026-06-29,here's,word,10,12,"Google Alerts, YouTube",2026-04-27
+2026-06-29,cute,word,10,12,YouTube,2026-06-13
+2026-06-29,year,word,10,12,"Google Alerts, YouTube",2026-05-08
+2026-06-29,done,word,10,12,"Reddit, YouTube",2025-05-16
+2026-06-29,shot,word,10,12,"Google Alerts, YouTube",2013-09-19
+2026-06-29,bcg,word,10,12,YouTube,2026-06-14
+2026-06-29,government,word,10,12,"Google Alerts, Reddit, YouTube, YouTube AU",2019-03-25
+2026-06-29,tap water,phrase,10,11,YouTube,2024-04-19
+2026-06-29,remove fluoride,phrase,10,11,"Google Alerts, YouTube, YouTube AU",2013-02-23
+2026-06-29,use,word,10,11,"Google Alerts, YouTube",2025-10-06
+2026-06-29,shortvideo,word,10,11,YouTube,2026-06-13
+2026-06-29,hydroxyapatite,word,10,11,YouTube,2026-06-13
+2026-06-29,don't,word,10,11,"Google Alerts, YouTube, YouTube AU",2019-03-25
+2026-06-29,got,word,10,11,"YouTube, YouTube AU",2026-06-16
+2026-06-29,warning,word,10,11,"Google Alerts, YouTube, YouTube AU",2026-06-11
+2026-06-29,covid vaccines,phrase,10,10,"Google Alerts, Reddit, YouTube",2022-04-01
+2026-06-29,never,word,10,10,YouTube,2026-04-14
+2026-06-29,rabies,word,10,10,YouTube,2022-09-25
+2026-06-29,dental,word,10,10,"Google Alerts, YouTube",2025-05-02
+2026-06-29,women,word,10,10,"Google Alerts, YouTube",2026-06-13
+2026-06-29,healthy,word,10,10,"Google Alerts, YouTube",2013-05-07
+2026-06-29,need,word,10,10,"Google Alerts, YouTube, YouTube AU",2024-11-10
+2026-06-29,vaccination program,phrase,9,18,"Google Alerts, Reddit, YouTube, YouTube AU",2022-05-23
+2026-06-29,cat,word,9,13,"Google Alerts, YouTube",2026-06-15
+2026-06-29,flu season,phrase,9,13,"Google Alerts, YouTube AU",2026-05-01
+2026-06-29,risks,word,9,12,"Google Alerts, YouTube, YouTube AU",2024-11-04
+2026-06-29,healthcare,word,9,12,"Google Alerts, YouTube",2026-04-14
+2026-06-29,water supply,phrase,9,12,"Google Alerts, YouTube, YouTube AU",2013-02-23
+2026-06-29,house,word,9,12,"Google Alerts, YouTube, YouTube AU",2017-02-28
+2026-06-29,fyp,word,9,12,YouTube,2026-06-16
+2026-06-29,community,word,9,11,"Google Alerts, YouTube, YouTube AU",2026-06-12
+2026-06-29,covid vaccination,phrase,9,11,"Google Alerts, Reddit, YouTube, YouTube AU",2021-06-29
+2026-06-29,adults,word,9,11,"Google Alerts, Reddit, YouTube, YouTube AU",2022-04-08
+2026-06-29,rsv vaccination,phrase,9,11,Google Alerts,2026-06-12
+2026-06-29,system,word,9,10,"Google Alerts, YouTube, YouTube AU",2022-10-08
+2026-06-29,council,word,9,10,"Google Alerts, YouTube, YouTube AU",2011-05-05
+2026-06-29,time,word,9,10,"Google Alerts, YouTube",2026-06-12
+2026-06-29,back,word,9,10,"Google Alerts, YouTube, YouTube AU",2014-12-05
+2026-06-29,prevention,word,9,10,"Google Alerts, YouTube",2026-06-13
+2026-06-29,it's,word,9,10,"Google Alerts, YouTube",2025-06-29
+2026-06-29,debate,word,9,9,"Google Alerts, YouTube, YouTube AU",2024-10-12
+2026-06-29,shocking,word,9,9,YouTube,2024-08-27
+2026-06-29,parents,word,9,9,"Google Alerts, Reddit, YouTube, YouTube AU",2025-12-09
+2026-06-29,mandate,word,9,9,"Google Alerts, Reddit, YouTube, YouTube AU",2022-04-07
+2026-06-29,report,word,9,9,"Google Alerts, YouTube, YouTube AU",2015-12-25
+2026-06-29,prevent,word,9,9,"Google Alerts, YouTube",2026-06-14
+2026-06-29,shingles,word,9,9,"Google Alerts, YouTube, YouTube AU",2026-04-29
+2026-06-29,cavities,word,9,9,YouTube,2026-06-16
+2026-06-29,melbourne,word,8,16,"Google Alerts, Reddit, YouTube AU",2025-08-10
+2026-06-29,daily,word,8,14,"Google Alerts, YouTube, YouTube AU",2026-04-27
+2026-06-29,update,word,8,14,"Google Alerts, YouTube",2026-06-11
+2026-06-29,global,word,8,13,"Google Alerts, YouTube, YouTube AU",2026-06-14
+2026-06-29,nsw,word,8,12,"Google Alerts, YouTube AU",2026-05-27
+2026-06-29,dengue,word,8,11,"Google Alerts, YouTube",2026-06-15
+2026-06-29,deadly,word,8,11,"Google Alerts, Reddit, YouTube",2024-04-29
+2026-06-29,cases,word,8,11,"Google Alerts, YouTube AU",2026-05-20
+2026-06-29,respiratory,word,8,11,Google Alerts,2026-06-16
+2026-06-29,says,word,8,10,"Google Alerts, YouTube, YouTube AU",2022-12-21
+2026-06-29,another,word,8,10,"Google Alerts, Reddit, YouTube",2021-09-12
+2026-06-29,nano,word,8,10,"YouTube, YouTube AU",2026-05-14
+2026-06-29,what's,word,8,9,"Google Alerts, YouTube, YouTube AU",2025-04-13
+2026-06-29,waste,word,8,9,"YouTube, YouTube AU",2012-08-04
+2026-06-29,removes,word,8,9,"Google Alerts, YouTube, YouTube AU",2024-06-03
+2026-06-29,body,word,8,9,"Google Alerts, YouTube",2026-05-13
+2026-06-29,viralvideo,word,8,9,YouTube,2026-06-13
+2026-06-29,university,word,8,9,"Google Alerts, YouTube, YouTube AU",2026-04-01
+2026-06-29,baby vaccine,phrase,8,9,YouTube,2026-06-13
+2026-06-29,childhood,word,8,9,"Google Alerts, YouTube, YouTube AU",2025-05-16
+2026-06-29,extended,word,8,9,"Google Alerts, YouTube",2026-06-21
+2026-06-29,works,word,8,8,"Google Alerts, YouTube",2022-01-10
+2026-06-29,vaccine deaths,phrase,8,8,"YouTube, YouTube AU",2021-01-17
+2026-06-29,really,word,8,8,"YouTube, YouTube AU",2024-06-17
+2026-06-29,smile,word,8,8,"Google Alerts, YouTube",2026-05-14
+2026-06-29,public health,phrase,8,8,"Google Alerts, YouTube, YouTube AU",2024-03-22
+2026-06-29,rfk,word,8,8,"Google Alerts, YouTube, YouTube AU",2025-04-25
+2026-06-29,guide,word,8,8,"Google Alerts, YouTube, YouTube AU",2026-06-14
+2026-06-29,babycare,word,8,8,YouTube,2026-06-13
+2026-06-29,rollout,word,8,8,"Google Alerts, YouTube, YouTube AU",2022-10-12
+2026-06-29,important,word,8,8,"Google Alerts, YouTube",2026-06-13
+2026-06-29,big pharma,phrase,8,8,"Reddit, YouTube, YouTube AU",2020-03-23
+2026-06-29,shingles vaccine,phrase,8,8,"Google Alerts, YouTube, YouTube AU",2026-06-15
+2026-06-29,reels,word,8,8,YouTube,2026-06-23
+2026-06-29,local,word,7,13,Google Alerts,2026-06-12
+2026-06-29,stock,word,7,12,Google Alerts,2026-06-17
+2026-06-29,travel,word,7,11,Google Alerts,2026-06-14
+2026-06-29,alert,word,7,11,Google Alerts,2026-06-18
+2026-06-29,chlorine,word,7,10,"Google Alerts, YouTube",2026-04-07
+2026-06-29,whole,word,7,10,"Google Alerts, YouTube, YouTube AU",2016-06-22
+2026-06-29,doctors,word,7,9,"Google Alerts, Reddit, YouTube",2021-10-02
+2026-06-29,podcast,word,7,9,"Google Alerts, YouTube",2025-02-13
+2026-06-29,stronger,word,7,9,"Google Alerts, YouTube",2022-01-22
+2026-06-29,getting,word,7,9,"Google Alerts, Reddit, YouTube, YouTube AU",2021-09-12
+2026-06-29,get vaccinated,phrase,7,9,"Google Alerts, YouTube, YouTube AU",2026-05-01
+2026-06-29,primary,word,7,9,"Google Alerts, YouTube",2026-06-12
+2026-06-29,history,word,7,8,"Google Alerts, YouTube",2013-12-14
+2026-06-29,removes fluoride,phrase,7,8,"YouTube, YouTube AU",2024-06-03
+2026-06-29,watch,word,7,8,"Google Alerts, YouTube, YouTube AU",2022-12-28
+2026-06-29,made,word,7,8,YouTube,2012-08-04
+2026-06-29,song,word,7,8,YouTube,2025-11-29
+2026-06-29,cover,word,7,8,"Google Alerts, YouTube",2026-06-12
+2026-06-29,future,word,7,8,"Google Alerts, YouTube",2026-06-05
+2026-06-29,high,word,7,8,"Google Alerts, Reddit, YouTube",2022-11-04
+2026-06-29,cdc,word,7,8,"Google Alerts, YouTube",2022-01-22
+2026-06-29,give,word,7,8,"Google Alerts, Reddit, YouTube",2020-03-13
+2026-06-29,you're,word,7,8,"Google Alerts, YouTube",2026-06-08
+2026-06-29,next,word,7,8,"Google Alerts, YouTube, YouTube AU",2026-06-15
+2026-06-29,finds,word,7,8,"Google Alerts, YouTube",2026-06-13
+2026-06-29,little,word,7,8,"Google Alerts, YouTube",2026-06-12
+2026-06-29,late,word,7,8,"Google Alerts, YouTube",2026-06-22
+2026-06-29,short,word,7,7,"YouTube, YouTube AU",2020-04-10
+2026-06-29,top,word,7,7,"Google Alerts, YouTube, YouTube AU",2021-09-01
+2026-06-29,filters,word,7,7,"Google Alerts, YouTube, YouTube AU",2024-08-12
+2026-06-29,dangers,word,7,7,YouTube,2011-12-04
+2026-06-29,dentist,word,7,7,"Google Alerts, YouTube",2025-11-13
+2026-06-29,city,word,7,7,"Google Alerts, YouTube, YouTube AU",2011-05-05
+2026-06-29,alternative vaccine,phrase,7,7,YouTube,2009-09-02
+2026-06-29,without,word,7,7,"Google Alerts, YouTube, YouTube AU",2022-09-25
+2026-06-29,real,word,7,7,"Google Alerts, YouTube",2026-05-10
+2026-06-29,think,word,7,7,YouTube,2026-06-11
+2026-06-29,awareness,word,7,7,YouTube,2026-05-29
+2026-06-29,concerns,word,7,7,"Google Alerts, YouTube, YouTube AU",2024-11-10
+2026-06-29,pregnant,word,7,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,dangerous,word,7,7,"Google Alerts, Reddit, YouTube, YouTube AU",2024-04-25
+2026-06-29,effective,word,7,7,"Google Alerts, YouTube",2022-01-27
+2026-06-29,vaccine mandate,phrase,7,7,"Google Alerts, YouTube",2026-06-14
+2026-06-29,vaccine day,phrase,7,7,YouTube,2026-06-13
+2026-06-29,want,word,7,7,"YouTube, YouTube AU",2019-03-25
+2026-06-29,dementia,word,7,7,"Google Alerts, YouTube, YouTube AU",2026-04-29
+2026-06-29,still,word,7,7,"Google Alerts, YouTube, YouTube AU",2017-03-08
+2026-06-29,lives,word,7,7,"Google Alerts, Reddit, YouTube, YouTube AU",2022-05-23
+2026-06-29,enamel,word,7,7,"Google Alerts, YouTube",2026-06-18
+2026-06-29,home,word,7,7,"YouTube, YouTube AU",2022-10-28
+2026-06-29,west,word,7,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,shortsfeed,word,6,39,YouTube,2026-06-13
+2026-06-29,goat,word,6,20,YouTube,2026-06-13
+2026-06-29,boost,word,6,12,Google Alerts,2026-06-11
+2026-06-29,viral trending,phrase,6,11,YouTube,2026-06-13
+2026-06-29,vet,word,6,10,"Google Alerts, YouTube",2026-06-14
+2026-06-29,rock,word,6,9,YouTube,2026-06-13
+2026-06-29,influenza vaccine,phrase,6,9,"Google Alerts, YouTube",2026-06-11
+2026-06-29,problem,word,6,9,"Google Alerts, YouTube",2026-06-19
+2026-06-29,viruses,word,6,9,"Google Alerts, YouTube",2026-06-17
+2026-06-29,farming,word,6,8,"Reddit, YouTube",2025-05-19
+2026-06-29,puppy,word,6,8,YouTube,2026-06-14
+2026-06-29,trial,word,6,8,"Google Alerts, YouTube",2026-06-15
+2026-06-29,older,word,6,8,"Google Alerts, Reddit",2025-06-03
+2026-06-29,north,word,6,8,"Google Alerts, Reddit",2022-01-23
+2026-06-29,policy,word,6,8,Google Alerts,2026-06-12
+2026-06-29,warns,word,6,8,Google Alerts,2026-06-13
+2026-06-29,flu shot,phrase,6,8,Google Alerts,2026-06-15
+2026-06-29,sydney,word,6,8,Google Alerts,2026-06-15
+2026-06-29,diseases,word,6,8,Google Alerts,2026-06-16
+2026-06-29,mpox,word,6,8,Google Alerts,2026-06-16
+2026-06-29,young,word,6,7,"Google Alerts, YouTube",2026-05-12
+2026-06-29,reveals,word,6,7,"Google Alerts, YouTube",2026-04-08
+2026-06-29,sparks,word,6,7,"Google Alerts, YouTube, YouTube AU",2025-10-09
+2026-06-29,third,word,6,7,"Google Alerts, YouTube",2026-05-09
+2026-06-29,shots,word,6,7,"Google Alerts, YouTube",2025-12-08
+2026-06-29,pneumococcal vaccination,phrase,6,7,"Google Alerts, YouTube",2026-06-14
+2026-06-29,world's,word,6,7,"Google Alerts, YouTube, YouTube AU",2024-02-26
+2026-06-29,bcg vaccine,phrase,6,7,YouTube,2026-06-14
+2026-06-29,helps,word,6,7,"Google Alerts, YouTube",2026-06-14
+2026-06-29,sick,word,6,7,"Google Alerts, YouTube",2026-06-14
+2026-06-29,study finds,phrase,6,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,fight,word,6,7,"Google Alerts, YouTube, YouTube AU",2025-09-25
+2026-06-29,help,word,6,7,"Google Alerts, Reddit, YouTube",2026-01-22
+2026-06-29,please,word,6,7,"Reddit, YouTube, YouTube AU",2021-06-25
+2026-06-29,adult,word,6,7,"Google Alerts, Reddit, YouTube",2025-12-11
+2026-06-29,aged,word,6,7,"Google Alerts, YouTube AU",2022-04-06
+2026-06-29,amid,word,6,7,"Google Alerts, YouTube AU",2022-01-06
+2026-06-29,south australia,phrase,6,7,"Google Alerts, Reddit",2024-04-15
+2026-06-29,exposed,word,6,6,"YouTube, YouTube AU",2025-12-05
+2026-06-29,trust,word,6,6,"Google Alerts, YouTube",2025-12-09
+2026-06-29,best fluoride,phrase,6,6,"YouTube, YouTube AU",2023-12-25
+2026-06-29,industrial,word,6,6,"YouTube, YouTube AU",2016-03-12
+2026-06-29,oral,word,6,6,"Google Alerts, YouTube",2026-06-08
+2026-06-29,talks,word,6,6,"Google Alerts, YouTube, YouTube AU",2009-09-02
+2026-06-29,pineal,word,6,6,"YouTube, YouTube AU",2024-07-13
+2026-06-29,explains,word,6,6,"Google Alerts, YouTube, YouTube AU",2025-06-06
+2026-06-29,brushing,word,6,6,YouTube,2026-06-13
+2026-06-29,toothpaste review,phrase,6,6,"YouTube, YouTube AU",2026-02-19
+2026-06-29,facts,word,6,6,"Google Alerts, YouTube, YouTube AU",2022-01-22
+2026-06-29,reduce,word,6,6,"Google Alerts, Reddit, YouTube",2021-06-22
+2026-06-29,effects,word,6,6,"Google Alerts, YouTube, YouTube AU",2011-12-04
+2026-06-29,world,word,6,6,"Google Alerts, YouTube",2011-12-04
+2026-06-29,dog vaccination,phrase,6,6,YouTube,2026-06-13
+2026-06-29,vaccine shorts,phrase,6,6,YouTube,2026-06-13
+2026-06-29,results,word,6,6,"Google Alerts, YouTube, YouTube AU",2022-12-21
+2026-06-29,pet,word,6,6,"Google Alerts, YouTube",2026-05-29
+2026-06-29,vaccine lies,phrase,6,6,YouTube,2025-10-11
+2026-06-29,mmr,word,6,6,"Google Alerts, YouTube",2025-10-11
+2026-06-29,makes,word,6,6,"Google Alerts, YouTube, YouTube AU",2025-12-31
+2026-06-29,music,word,6,6,YouTube,2026-06-14
+2026-06-29,like,word,6,6,YouTube,2026-06-13
+2026-06-29,india,word,6,6,YouTube,2026-06-13
+2026-06-29,human,word,6,6,"Google Alerts, YouTube",2026-06-14
+2026-06-29,funny,word,6,6,YouTube,2026-06-14
+2026-06-29,save,word,6,6,"Google Alerts, YouTube",2026-06-15
+2026-06-29,heart,word,6,6,"Google Alerts, Reddit, YouTube, YouTube AU",2025-08-10
+2026-06-29,complete,word,6,6,"YouTube, YouTube AU",2026-02-19
+2026-06-29,advice,word,6,6,"Google Alerts, Reddit, YouTube",2022-04-11
+2026-06-29,controversy,word,6,6,"YouTube, YouTube AU",2025-10-09
+2026-06-29,parenting,word,6,6,YouTube,2026-06-17
+2026-06-29,right,word,6,6,"YouTube, YouTube AU",2019-11-07
+2026-06-29,silver,word,6,6,"Google Alerts, YouTube",2026-06-13
+2026-06-29,side,word,6,6,"Google Alerts, Reddit, YouTube, YouTube AU",2024-04-29
+2026-06-29,military,word,6,6,"Google Alerts, Reddit, YouTube",2026-03-07
+2026-06-29,early,word,6,6,"Google Alerts, Reddit, YouTube",2022-05-23
+2026-06-29,since,word,6,6,"Google Alerts, Reddit, YouTube",2021-09-12
+2026-06-29,polio drops,phrase,6,6,YouTube,2026-06-24
+2026-06-29,updates,word,6,6,Google Alerts,2026-06-12
+2026-06-29,nations,word,6,6,Google Alerts,2026-06-14
+2026-06-29,first nations,phrase,6,6,Google Alerts,2026-06-14
+2026-06-29,winter vaccinations,phrase,6,6,Google Alerts,2026-06-22
+2026-06-29,slowed,word,5,13,YouTube,2026-06-13
+2026-06-29,weekly,word,5,13,"Google Alerts, Reddit",2025-11-15
+2026-06-29,connett,word,5,12,"YouTube, YouTube AU",2013-02-12
+2026-06-29,incelcore,word,5,12,YouTube,2026-06-13
+2026-06-29,education,word,5,12,"Google Alerts, YouTube",2026-06-18
+2026-06-29,experts,word,5,11,"Google Alerts, YouTube, YouTube AU",2024-08-17
+2026-06-29,times,word,5,11,Google Alerts,2026-06-16
+2026-06-29,base,word,5,10,"Google Alerts, YouTube",2026-06-20
+2026-06-29,long,word,5,9,"Google Alerts, Reddit, YouTube",2020-03-25
+2026-06-29,moderna,word,5,9,"Google Alerts, YouTube, YouTube AU",2026-06-17
+2026-06-29,punk,word,5,8,YouTube,2026-06-13
+2026-06-29,rock type,phrase,5,8,YouTube,2026-06-13
+2026-06-29,receive,word,5,8,"Google Alerts, YouTube",2026-06-14
+2026-06-29,flu outbreak,phrase,5,8,"Google Alerts, YouTube",2026-06-20
+2026-06-29,changes,word,5,8,"Google Alerts, YouTube",2026-06-16
+2026-06-29,check,word,5,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,almost,word,5,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,benefits,word,5,7,"Google Alerts, YouTube, YouTube AU",2026-04-22
+2026-06-29,cow,word,5,7,"Reddit, YouTube",2025-05-18
+2026-06-29,hub,word,5,7,"Google Alerts, YouTube",2026-06-12
+2026-06-29,evidence,word,5,7,"Google Alerts, YouTube",2026-06-17
+2026-06-29,australians,word,5,7,"Google Alerts, YouTube AU",2019-03-25
+2026-06-29,victoria,word,5,7,Google Alerts,2026-06-15
+2026-06-29,free influenza,phrase,5,7,Google Alerts,2026-06-22
+2026-06-29,sodium,word,5,6,YouTube,2026-05-21
+2026-06-29,birth,word,5,6,"Google Alerts, YouTube",2026-03-05
+2026-06-29,funding,word,5,6,"Google Alerts, YouTube",2026-06-11
+2026-06-29,court,word,5,6,"Reddit, YouTube, YouTube AU",2022-07-05
+2026-06-29,rtbrkr,word,5,6,YouTube,2026-06-13
+2026-06-29,colgate,word,5,6,"Google Alerts, YouTube",2026-06-13
+2026-06-29,vaccination shorts,phrase,5,6,YouTube,2026-06-13
+2026-06-29,new vaccine,phrase,5,6,"Google Alerts, YouTube",2026-06-14
+2026-06-29,inside,word,5,6,"Google Alerts, YouTube, YouTube AU",2024-06-29
+2026-06-29,story,word,5,6,"Google Alerts, YouTube, YouTube AU",2024-06-29
+2026-06-29,smart,word,5,6,"Google Alerts, YouTube",2025-06-29
+2026-06-29,china,word,5,6,"Google Alerts, YouTube, YouTube AU",2021-01-18
+2026-06-29,nano hydroxyapatite,phrase,5,6,YouTube,2026-06-15
+2026-06-29,dengue vaccine,phrase,5,6,YouTube,2026-06-15
+2026-06-29,rise,word,5,6,"Google Alerts, YouTube",2026-06-12
+2026-06-29,livestock,word,5,6,"Google Alerts, YouTube",2026-06-12
+2026-06-29,covid flu,phrase,5,6,"Google Alerts, YouTube",2026-06-18
+2026-06-29,major,word,5,6,"Google Alerts, YouTube, YouTube AU",2023-12-13
+2026-06-29,nasal,word,5,6,"Google Alerts, YouTube, YouTube AU",2026-05-27
+2026-06-29,dogs,word,5,6,YouTube,2026-06-19
+2026-06-29,natural toothpaste,phrase,5,6,"Google Alerts, YouTube, YouTube AU",2018-10-13
+2026-06-29,book,word,5,6,"Google Alerts, YouTube",2026-06-12
+2026-06-29,wise,word,5,6,"Google Alerts, YouTube",2026-06-24
+2026-06-29,outbreaks,word,5,6,"Google Alerts, YouTube AU",2025-04-01
+2026-06-29,coast,word,5,6,"Google Alerts, Reddit, YouTube AU",2013-02-23
+2026-06-29,influenza vaccines,phrase,5,6,"Google Alerts, YouTube AU",2026-06-24
+2026-06-29,confirmed,word,5,6,Google Alerts,2026-06-11
+2026-06-29,online,word,5,6,Google Alerts,2026-06-12
+2026-06-29,vax,word,5,5,"Reddit, YouTube",2022-04-05
+2026-06-29,latest,word,5,5,"Google Alerts, YouTube",2022-04-05
+2026-06-29,pfizer,word,5,5,"Reddit, YouTube, YouTube AU",2021-01-17
+2026-06-29,added,word,5,5,"YouTube, YouTube AU",2020-11-18
+2026-06-29,sodium fluoride,phrase,5,5,YouTube,2026-05-21
+2026-06-29,safety,word,5,5,"Reddit, YouTube",2022-05-23
+2026-06-29,gets,word,5,5,"Google Alerts, YouTube",2026-05-13
+2026-06-29,claims,word,5,5,"YouTube, YouTube AU",2022-12-05
+2026-06-29,must,word,5,5,"YouTube, YouTube AU",2022-12-28
+2026-06-29,shower,word,5,5,"Google Alerts, YouTube",2026-04-19
+2026-06-29,bad,word,5,5,YouTube,2026-05-18
+2026-06-29,question,word,5,5,YouTube,2026-01-12
+2026-06-29,annual,word,5,5,"Google Alerts, YouTube",2026-06-13
+2026-06-29,schedules,word,5,5,YouTube,2013-09-19
+2026-06-29,excess,word,5,5,"YouTube, YouTube AU",2022-12-05
+2026-06-29,cause,word,5,5,"Google Alerts, YouTube",2026-04-08
+2026-06-29,gland,word,5,5,"YouTube, YouTube AU",2024-07-13
+2026-06-29,pineal gland,phrase,5,5,"YouTube, YouTube AU",2024-07-13
+2026-06-29,systems,word,5,5,"Google Alerts, YouTube",2026-06-10
+2026-06-29,tooth,word,5,5,YouTube,2026-06-13
+2026-06-29,whitening toothpaste,phrase,5,5,YouTube,2026-06-13
+2026-06-29,lead,word,5,5,"Google Alerts, YouTube, YouTube AU",2025-07-31
+2026-06-29,fluoride drinking,phrase,5,5,YouTube,2024-11-10
+2026-06-29,vaccination viral,phrase,5,5,YouTube,2026-06-13
+2026-06-29,medicine,word,5,5,"Google Alerts, YouTube",2016-06-22
+2026-06-29,lied,word,5,5,"YouTube, YouTube AU",2020-09-07
+2026-06-29,lie,word,5,5,YouTube,2025-11-13
+2026-06-29,way,word,5,5,"Google Alerts, YouTube",2012-08-04
+2026-06-29,cancer vaccine,phrase,5,5,"Google Alerts, YouTube",2026-06-13
+2026-06-29,power,word,5,5,"YouTube, YouTube AU",2024-03-22
+2026-06-29,fluoride actually,phrase,5,5,YouTube,2026-06-14
+2026-06-29,role,word,5,5,"Google Alerts, YouTube",2025-05-02
+2026-06-29,available,word,5,5,"Reddit, YouTube, YouTube AU",2022-01-23
+2026-06-29,drive,word,5,5,"Google Alerts, YouTube",2026-06-14
+2026-06-29,pregnancy,word,5,5,"Google Alerts, YouTube",2026-06-13
+2026-06-29,would,word,5,5,"Google Alerts, YouTube, YouTube AU",2025-01-12
+2026-06-29,visit,word,5,5,"Google Alerts, YouTube",2026-06-14
+2026-06-29,cattle,word,5,5,"Google Alerts, YouTube",2026-06-14
+2026-06-29,decision,word,5,5,"Google Alerts, Reddit, YouTube",2023-09-22
+2026-06-29,forever,word,5,5,"YouTube, YouTube AU",2024-06-03
+2026-06-29,end,word,5,5,"Google Alerts, YouTube",2026-06-16
+2026-06-29,vaccine injection,phrase,5,5,"Google Alerts, YouTube",2026-06-18
+2026-06-29,start,word,5,5,"Google Alerts, YouTube",2026-06-11
+2026-06-29,diamine,word,5,5,"Google Alerts, YouTube",2026-06-13
+2026-06-29,work,word,5,5,"Google Alerts, YouTube, YouTube AU",2026-03-02
+2026-06-29,hits,word,5,5,"Google Alerts, YouTube",2026-06-17
+2026-06-29,lower,word,5,5,"Google Alerts, YouTube",2026-06-16
+2026-06-29,street,word,5,5,"Google Alerts, YouTube",2026-06-21
+2026-06-29,vaccine study,phrase,5,5,"YouTube, YouTube AU",2026-06-07
+2026-06-29,campaign,word,5,5,"YouTube, YouTube AU",2026-04-26
+2026-06-29,funded,word,5,5,"Google Alerts, Reddit, YouTube",2026-02-04
+2026-06-29,poliodrops,word,5,5,YouTube,2026-06-28
+2026-06-29,vijay,word,5,5,YouTube,2026-06-28
+2026-06-29,diphtheria outbreak,phrase,5,5,"Google Alerts, YouTube AU",2026-05-21
+2026-06-29,peak,word,5,5,"Google Alerts, YouTube AU",2024-07-03
+2026-06-29,vaccination rates,phrase,5,5,"Google Alerts, YouTube AU",2025-05-16
+2026-06-29,nip,word,5,5,"Google Alerts, Reddit",2026-02-04
+2026-06-29,network,word,5,5,"Google Alerts, Reddit",2022-07-05
+2026-06-29,weight-loss,word,5,5,Google Alerts,2026-06-11
+2026-06-29,com,word,4,14,"Google Alerts, YouTube",2026-06-11
+2026-06-29,centre,word,4,13,Google Alerts,2026-06-12
+2026-06-29,paul,word,4,12,"YouTube, YouTube AU",2013-02-12
+2026-06-29,paul connett,phrase,4,11,"YouTube, YouTube AU",2013-02-12
+2026-06-29,department,word,4,11,"Google Alerts, Reddit",2022-07-05
+2026-06-29,media,word,4,10,Google Alerts,2026-06-12
+2026-06-29,influenza vaccination,phrase,4,8,Google Alerts,2026-06-16
+2026-06-29,november,word,4,7,"Google Alerts, Reddit, YouTube",2022-11-04
+2026-06-29,punk rock,phrase,4,7,YouTube,2026-06-13
+2026-06-29,recommended,word,4,7,"Google Alerts, YouTube",2026-06-13
+2026-06-29,loss,word,4,7,"Google Alerts, YouTube",2026-05-16
+2026-06-29,whole house,phrase,4,7,"Google Alerts, YouTube, YouTube AU",2024-01-17
+2026-06-29,herald,word,4,7,"Google Alerts, YouTube AU",2023-12-13
+2026-06-29,star,word,4,7,Google Alerts,2026-06-12
+2026-06-29,star weekly,phrase,4,7,Google Alerts,2026-06-12
+2026-06-29,pets,word,4,6,YouTube,2026-06-14
+2026-06-29,hepatitis vaccine,phrase,4,6,"Google Alerts, YouTube",2026-06-13
+2026-06-29,wifiskeleton,word,4,6,YouTube,2026-06-13
+2026-06-29,tetanus,word,4,6,"Google Alerts, YouTube",2026-06-13
+2026-06-29,nurse,word,4,6,"Google Alerts, YouTube",2026-06-14
+2026-06-29,low,word,4,6,"Google Alerts, Reddit, YouTube, YouTube AU",2025-05-19
+2026-06-29,farm,word,4,6,YouTube,2026-06-14
+2026-06-29,momlife,word,4,6,YouTube,2026-06-16
+2026-06-29,flu vaccines,phrase,4,6,"Google Alerts, YouTube",2026-06-18
+2026-06-29,professional,word,4,6,"Google Alerts, Reddit, YouTube, YouTube AU",2026-04-05
+2026-06-29,vaccine today,phrase,4,6,"Google Alerts, YouTube, YouTube AU",2026-06-12
+2026-06-29,port,word,4,6,"Google Alerts, YouTube AU",2021-07-17
+2026-06-29,karl,word,4,6,"Google Alerts, YouTube AU",2026-05-29
+2026-06-29,winter health,phrase,4,6,Google Alerts,2026-06-12
+2026-06-29,two,word,4,6,Google Alerts,2026-06-11
+2026-06-29,manufacturing,word,4,6,Google Alerts,2026-06-15
+2026-06-29,respiratory viruses,phrase,4,6,Google Alerts,2026-06-17
+2026-06-29,fertilizer,word,4,5,YouTube,2025-04-24
+2026-06-29,strategy,word,4,5,"Google Alerts, YouTube",2022-02-28
+2026-06-29,toxic byproduct,phrase,4,5,YouTube,2024-08-27
+2026-06-29,expert,word,4,5,"Google Alerts, YouTube",2026-05-15
+2026-06-29,chlorine fluoride,phrase,4,5,"Google Alerts, YouTube",2026-05-26
+2026-06-29,reduction,word,4,5,YouTube,2026-04-17
+2026-06-29,newbornbaby,word,4,5,YouTube,2026-06-13
+2026-06-29,baby first,phrase,4,5,YouTube,2026-06-13
+2026-06-29,response,word,4,5,"Google Alerts, YouTube",2021-05-27
+2026-06-29,claim,word,4,5,"Google Alerts, YouTube",2025-12-01
+2026-06-29,ended,word,4,5,"Google Alerts, YouTube",2025-02-11
+2026-06-29,total,word,4,5,"Google Alerts, YouTube",2026-06-13
+2026-06-29,learn,word,4,5,"Google Alerts, YouTube",2026-05-01
+2026-06-29,shorts trending,phrase,4,5,YouTube,2026-06-13
+2026-06-29,meningitis,word,4,5,"Google Alerts, YouTube",2026-06-12
+2026-06-29,interview,word,4,5,"Google Alerts, YouTube, YouTube AU",2013-05-07
+2026-06-29,make,word,4,5,"Google Alerts, YouTube",2026-06-12
+2026-06-29,food,word,4,5,"YouTube, YouTube AU",2026-06-13
+2026-06-29,second,word,4,5,"Google Alerts, YouTube, YouTube AU",2013-02-12
+2026-06-29,moment,word,4,5,YouTube,2026-06-14
+2026-06-29,month baby,phrase,4,5,YouTube,2026-06-14
+2026-06-29,level,word,4,5,"Google Alerts, YouTube",2026-06-16
+2026-06-29,relatable,word,4,5,YouTube,2026-06-16
+2026-06-29,development,word,4,5,"Google Alerts, YouTube, YouTube AU",2024-12-25
+2026-06-29,warn,word,4,5,"Google Alerts, YouTube",2026-06-14
+2026-06-29,vaccination done,phrase,4,5,YouTube,2026-06-16
+2026-06-29,newborn baby,phrase,4,5,YouTube,2026-06-16
+2026-06-29,grows,word,4,5,"Google Alerts, YouTube, YouTube AU",2026-05-24
+2026-06-29,current,word,4,5,"Google Alerts, YouTube, YouTube AU",2026-04-29
+2026-06-29,bcg vaccination,phrase,4,5,YouTube,2026-06-18
+2026-06-29,protecting,word,4,5,"Google Alerts, YouTube",2026-06-19
+2026-06-29,crying,word,4,5,YouTube,2026-06-19
+2026-06-29,injury,word,4,5,"YouTube, YouTube AU",2022-12-21
+2026-06-29,hegseth,word,4,5,YouTube,2026-06-19
+2026-06-29,mint,word,4,5,"Google Alerts, YouTube",2026-06-20
+2026-06-29,cancer deaths,phrase,4,5,"Google Alerts, YouTube",2026-06-18
+2026-06-29,spray,word,4,5,"Google Alerts, YouTube, YouTube AU",2026-05-27
+2026-06-29,nasal spray,phrase,4,5,"Google Alerts, YouTube, YouTube AU",2026-05-27
+2026-06-29,gay,word,4,5,YouTube,2026-06-22
+2026-06-29,vaccination part,phrase,4,5,"Google Alerts, YouTube",2026-06-12
+2026-06-29,humans,word,4,5,"Google Alerts, YouTube",2026-06-22
+2026-06-29,mom,word,4,5,YouTube,2026-06-24
+2026-06-29,post,word,4,5,"Google Alerts, YouTube",2026-06-17
+2026-06-29,newborn vaccination,phrase,4,5,YouTube,2026-06-24
+2026-06-29,link,word,4,5,"YouTube, YouTube AU",2021-04-16
+2026-06-29,support,word,4,5,"Google Alerts, YouTube",2025-12-01
+2026-06-29,point,word,4,5,"Google Alerts, YouTube",2026-06-17
+2026-06-29,perth,word,4,5,"Google Alerts, Reddit, YouTube AU",2013-02-12
+2026-06-29,using,word,4,5,"Google Alerts, Reddit, YouTube AU",2015-12-25
+2026-06-29,huge,word,4,5,"Google Alerts, Reddit",2022-05-26
+2026-06-29,urges,word,4,5,"Google Alerts, Reddit",2022-12-02
+2026-06-29,urgent,word,4,5,Google Alerts,2026-06-11
+2026-06-29,slow,word,4,5,Google Alerts,2026-06-11
+2026-06-29,urged,word,4,5,Google Alerts,2026-06-13
+2026-06-29,congo,word,4,5,Google Alerts,2026-06-15
+2026-06-29,target,word,4,5,Google Alerts,2026-06-20
+2026-06-29,immunise,word,4,5,Google Alerts,2026-06-24
+2026-06-29,wise immunise,phrase,4,5,Google Alerts,2026-06-24
+2026-06-29,extended july,phrase,4,5,Google Alerts,2026-06-24
+2026-06-29,vaccines extended,phrase,4,5,Google Alerts,2026-06-24
+2026-06-29,immunise free,phrase,4,5,Google Alerts,2026-06-24
+2026-06-29,removal,word,4,4,"YouTube, YouTube AU",2011-02-10
+2026-06-29,fluoride removal,phrase,4,4,"YouTube, YouTube AU",2011-02-10
+2026-06-29,injections,word,4,4,"Google Alerts, YouTube",2026-03-06
+2026-06-29,fluoride tap,phrase,4,4,YouTube,2024-04-19
+2026-06-29,good,word,4,4,"Reddit, YouTube",2021-10-02
+2026-06-29,shower filter,phrase,4,4,"Google Alerts, YouTube",2026-04-19
+2026-06-29,america,word,4,4,"Google Alerts, YouTube",2025-11-21
+2026-06-29,industrial byproduct,phrase,4,4,YouTube,2016-03-12
+2026-06-29,worth,word,4,4,"YouTube, YouTube AU",2026-05-14
+2026-06-29,childhealth,word,4,4,YouTube,2026-05-10
+2026-06-29,vaccine schedules,phrase,4,4,YouTube,2013-09-19
+2026-06-29,excess deaths,phrase,4,4,YouTube,2025-10-20
+2026-06-29,mccullough,word,4,4,YouTube,2026-03-24
+2026-06-29,shocking vaccine,phrase,4,4,YouTube,2026-01-15
+2026-06-29,child deaths,phrase,4,4,YouTube,2025-12-01
+2026-06-29,immune,word,4,4,"Google Alerts, YouTube",2025-12-13
+2026-06-29,federal,word,4,4,"Reddit, YouTube, YouTube AU",2022-07-05
+2026-06-29,detection,word,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,quality,word,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,shorts shortvideo,phrase,4,4,YouTube,2026-06-13
+2026-06-29,focus,word,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,importance,word,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,industry,word,4,4,"Google Alerts, Reddit, YouTube",2025-05-19
+2026-06-29,shorts youtubeshorts,phrase,4,4,YouTube,2026-06-13
+2026-06-29,vaccine rollout,phrase,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,family,word,4,4,"Google Alerts, YouTube",2016-06-22
+2026-06-29,mmr vaccine,phrase,4,4,YouTube,2025-10-11
+2026-06-29,revealed,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-02-16
+2026-06-29,john,word,4,4,"Google Alerts, YouTube",2025-10-20
+2026-06-29,nursing,word,4,4,"Google Alerts, YouTube",2026-06-12
+2026-06-29,drop,word,4,4,"Google Alerts, Reddit, YouTube",2024-04-15
+2026-06-29,world's first,phrase,4,4,"Google Alerts, YouTube",2026-06-14
+2026-06-29,breaking,word,4,4,"Google Alerts, YouTube",2025-12-11
+2026-06-29,vaccinate,word,4,4,"Google Alerts, YouTube",2026-06-11
+2026-06-29,old,word,4,4,"Google Alerts, YouTube",2026-06-14
+2026-06-29,seconds,word,4,4,YouTube,2026-06-14
+2026-06-29,myths,word,4,4,"YouTube, YouTube AU",2026-05-08
+2026-06-29,course,word,4,4,YouTube,2026-06-14
+2026-06-29,vaccination baby,phrase,4,4,YouTube,2026-06-14
+2026-06-29,process,word,4,4,"Google Alerts, YouTube",2026-06-14
+2026-06-29,machine,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-06-14
+2026-06-29,linked,word,4,4,"Google Alerts, YouTube",2026-05-16
+2026-06-29,gigi,word,4,4,YouTube,2026-06-14
+2026-06-29,shield,word,4,4,"Google Alerts, YouTube",2026-06-15
+2026-06-29,days,word,4,4,YouTube,2026-06-15
+2026-06-29,months,word,4,4,YouTube,2026-06-15
+2026-06-29,mandatory,word,4,4,"Reddit, YouTube",2021-09-12
+2026-06-29,leading,word,4,4,"Google Alerts, YouTube",2026-06-15
+2026-06-29,push,word,4,4,"Google Alerts, YouTube",2022-01-10
+2026-06-29,catch,word,4,4,"Reddit, YouTube",2026-05-13
+2026-06-29,dentalhealth,word,4,4,YouTube,2026-06-16
+2026-06-29,effect,word,4,4,"Reddit, YouTube",2024-04-29
+2026-06-29,expands,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-05-27
+2026-06-29,babyshorts,word,4,4,YouTube,2026-06-17
+2026-06-29,matters,word,4,4,"Google Alerts, YouTube",2026-06-12
+2026-06-29,vaccine injury,phrase,4,4,"YouTube, YouTube AU",2022-12-21
+2026-06-29,pasta,word,4,4,YouTube,2026-06-19
+2026-06-29,nobs,word,4,4,YouTube,2026-06-19
+2026-06-29,diamine fluoride,phrase,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,silver diamine,phrase,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,experience,word,4,4,"Google Alerts, YouTube, YouTube AU",2022-12-21
+2026-06-29,workplace,word,4,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,price,word,4,4,"Google Alerts, YouTube",2026-06-17
+2026-06-29,worst,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-05-21
+2026-06-29,side effects,phrase,4,4,"Google Alerts, YouTube, YouTube AU",2024-06-17
+2026-06-29,babies,word,4,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,air,word,4,4,YouTube,2026-06-20
+2026-06-29,force,word,4,4,YouTube,2026-06-20
+2026-06-29,air force,phrase,4,4,YouTube,2026-06-20
+2026-06-29,poultry,word,4,4,"Google Alerts, YouTube",2026-06-12
+2026-06-29,ytshorts shorts,phrase,4,4,YouTube,2026-06-19
+2026-06-29,pain,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-04-02
+2026-06-29,suggests,word,4,4,"Google Alerts, YouTube",2026-06-16
+2026-06-29,study suggests,phrase,4,4,"Google Alerts, YouTube",2026-06-16
+2026-06-29,saving,word,4,4,"Reddit, YouTube, YouTube AU",2025-05-18
+2026-06-29,child's,word,4,4,YouTube,2026-06-21
+2026-06-29,fluoride treatment,phrase,4,4,YouTube,2026-06-20
+2026-06-29,lab,word,4,4,"Google Alerts, Reddit, YouTube",2020-03-13
+2026-06-29,episode,word,4,4,"Google Alerts, YouTube, YouTube AU",2025-10-29
+2026-06-29,causes,word,4,4,"Google Alerts, YouTube, YouTube AU",2024-06-29
+2026-06-29,youtube fluoride,phrase,4,4,YouTube,2026-06-21
+2026-06-29,hpv vaccination,phrase,4,4,"Google Alerts, YouTube",2026-06-21
+2026-06-29,records,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-05-20
+2026-06-29,tested,word,4,4,"Google Alerts, YouTube",2026-06-18
+2026-06-29,brain,word,4,4,"Google Alerts, YouTube, YouTube AU",2024-12-25
+2026-06-29,soon,word,4,4,"Google Alerts, YouTube, YouTube AU",2025-12-09
+2026-06-29,breakdown,word,4,4,"Google Alerts, Reddit, YouTube",2021-09-12
+2026-06-29,every child,phrase,4,4,YouTube,2026-06-23
+2026-06-29,western australia,phrase,4,4,"Google Alerts, YouTube, YouTube AU",2013-02-12
+2026-06-29,blood,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-05-30
+2026-06-29,beyond,word,4,4,"Google Alerts, YouTube",2026-06-17
+2026-06-29,scientists,word,4,4,"Google Alerts, YouTube",2026-06-12
+2026-06-29,minister,word,4,4,"Google Alerts, YouTube, YouTube AU",2025-10-15
+2026-06-29,pulsepolio,word,4,4,YouTube,2026-06-28
+2026-06-29,common,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-06-12
+2026-06-29,attacks,word,4,4,"Google Alerts, YouTube, YouTube AU",2026-06-15
+2026-06-29,primary health,phrase,4,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,water filters,phrase,4,4,"Google Alerts, YouTube AU",2024-08-12
+2026-06-29,australia's water,phrase,4,4,YouTube AU,2016-02-29
+2026-06-29,parliament,word,4,4,"Google Alerts, YouTube AU",2017-02-28
+2026-06-29,vaccine rates,phrase,4,4,"Google Alerts, YouTube AU",2026-04-26
+2026-06-29,information,word,4,4,"Google Alerts, YouTube AU",2024-04-30
+2026-06-29,seniors,word,4,4,"Google Alerts, YouTube AU",2026-05-19
+2026-06-29,gov,word,4,4,"Google Alerts, YouTube AU",2024-01-24
+2026-06-29,aged care,phrase,4,4,"Google Alerts, YouTube AU",2022-04-06
+2026-06-29,free flu,phrase,4,4,"Google Alerts, YouTube AU",2026-06-11
+2026-06-29,despite,word,4,4,"Google Alerts, YouTube AU",2026-06-17
+2026-06-29,jab,word,4,4,"Google Alerts, Reddit, YouTube AU",2024-04-29
+2026-06-29,access,word,4,4,"Google Alerts, Reddit, YouTube AU",2025-12-09
+2026-06-29,approves,word,4,4,"Google Alerts, Reddit, YouTube AU",2025-06-03
+2026-06-29,raises,word,4,4,"Google Alerts, Reddit",2025-11-05
+2026-06-29,symptoms,word,4,4,"Google Alerts, Reddit",2022-07-16
+2026-06-29,following,word,4,4,Google Alerts,2026-06-12
+2026-06-29,fever,word,4,4,Google Alerts,2026-06-12
+2026-06-29,designed,word,4,4,Google Alerts,2026-06-13
+2026-06-29,health network,phrase,4,4,Google Alerts,2026-06-13
+2026-06-29,eastern,word,4,4,Google Alerts,2026-06-15
+2026-06-29,africa,word,4,4,Google Alerts,2026-06-17
+2026-06-29,late get,phrase,4,4,Google Alerts,2026-06-22
+2026-06-29,abc,word,3,22,"Google Alerts, YouTube, YouTube AU",2023-11-20
+2026-06-29,statistics,word,3,10,"Reddit, YouTube",2025-11-07
+2026-06-29,free fried,phrase,3,8,YouTube,2026-06-16
+2026-06-29,presents,word,3,8,"Google Alerts, YouTube, YouTube AU",2015-02-24
+2026-06-29,business,word,3,8,"Google Alerts, YouTube AU",2018-01-24
+2026-06-29,canberra,word,3,8,"Google Alerts, YouTube AU",2024-10-09
+2026-06-29,healthed,word,3,8,Google Alerts,2026-06-16
+2026-06-29,surgery,word,3,7,"Google Alerts, YouTube",2026-06-17
+2026-06-29,discovery,word,3,7,"Google Alerts, YouTube",2026-06-20
+2026-06-29,ageing,word,3,7,Google Alerts,2026-06-16
+2026-06-29,reach,word,3,6,"Google Alerts, YouTube",2026-06-14
+2026-06-29,buy,word,3,6,"Google Alerts, YouTube",2026-06-13
+2026-06-29,brisbane,word,3,6,"Google Alerts, YouTube AU",2026-06-06
+2026-06-29,phoenix,word,3,6,"Google Alerts, YouTube AU",2024-11-16
+2026-06-29,urge,word,3,6,Google Alerts,2026-06-11
+2026-06-29,disability,word,3,6,Google Alerts,2026-06-21
+2026-06-29,pacific,word,3,6,Google Alerts,2026-06-23
+2026-06-29,professor,word,3,5,"YouTube, YouTube AU",2020-03-19
+2026-06-29,fluoride chlorine,phrase,3,5,YouTube,2026-04-07
+2026-06-29,injection vaccination,phrase,3,5,YouTube,2026-06-12
+2026-06-29,doctors update,phrase,3,5,"Google Alerts, YouTube",2026-06-11
+2026-06-29,pharmaceutical,word,3,5,"Google Alerts, YouTube",2025-12-09
+2026-06-29,senate,word,3,5,"YouTube, YouTube AU",2026-06-14
+2026-06-29,starts,word,3,5,"Google Alerts, YouTube",2026-06-16
+2026-06-29,journal,word,3,5,"Google Alerts, YouTube",2026-06-17
+2026-06-29,maternal,word,3,5,"Google Alerts, YouTube",2026-06-16
+2026-06-29,dose,word,3,5,YouTube,2026-06-24
+2026-06-29,page,word,3,5,"Google Alerts, YouTube",2026-06-18
+2026-06-29,efficacy,word,3,5,"Google Alerts, Reddit, YouTube AU",2022-05-23
+2026-06-29,france,word,3,5,"Google Alerts, YouTube AU",2022-01-06
+2026-06-29,macquarie,word,3,5,Google Alerts,2026-06-12
+2026-06-29,port macquarie,phrase,3,5,Google Alerts,2026-06-12
+2026-06-29,immunisation update,phrase,3,5,Google Alerts,2026-06-12
+2026-06-29,flumist,word,3,5,Google Alerts,2026-06-15
+2026-06-29,backs,word,3,5,Google Alerts,2026-06-15
+2026-06-29,mrna manufacturing,phrase,3,5,Google Alerts,2026-06-15
+2026-06-29,nsw health,phrase,3,5,Google Alerts,2026-06-16
+2026-06-29,ebola outbreak,phrase,3,5,Google Alerts,2026-06-17
+2026-06-29,moderna stock,phrase,3,5,Google Alerts,2026-06-17
+2026-06-29,version,word,3,4,YouTube,2020-03-25
+2026-06-29,presentation,word,3,4,"Reddit, YouTube, YouTube AU",2020-03-25
+2026-06-29,fluoride health,phrase,3,4,"YouTube, YouTube AU",2024-11-04
+2026-06-29,filter removes,phrase,3,4,"YouTube, YouTube AU",2024-06-03
+2026-06-29,fluoride reduction,phrase,3,4,YouTube,2026-04-17
+2026-06-29,misinformation,word,3,4,"YouTube, YouTube AU",2024-08-17
+2026-06-29,ask,word,3,4,YouTube,2023-02-28
+2026-06-29,ruling,word,3,4,"YouTube, YouTube AU",2024-11-04
+2026-06-29,fluoride punk,phrase,3,4,YouTube,2026-06-13
+2026-06-29,eye,word,3,4,YouTube,2026-05-09
+2026-06-29,third eye,phrase,3,4,YouTube,2026-05-09
+2026-06-29,chemicals,word,3,4,"YouTube, YouTube AU",2024-06-03
+2026-06-29,potential,word,3,4,"Google Alerts, YouTube",2024-11-10
+2026-06-29,hesitancy,word,3,4,"Google Alerts, YouTube",2025-02-13
+2026-06-29,vaccine hesitancy,phrase,3,4,"Google Alerts, YouTube",2025-02-13
+2026-06-29,exposes,word,3,4,"YouTube, YouTube AU",2024-11-04
+2026-06-29,tips,word,3,4,"Google Alerts, YouTube",2026-06-14
+2026-06-29,million,word,3,4,"Google Alerts, YouTube, YouTube AU",2026-06-12
+2026-06-29,brand,word,3,4,"Google Alerts, YouTube",2026-06-14
+2026-06-29,cute baby,phrase,3,4,YouTube,2026-06-13
+2026-06-29,fluoride wifiskeleton,phrase,3,4,YouTube,2026-06-15
+2026-06-29,moment shorts,phrase,3,4,YouTube,2026-06-14
+2026-06-29,reference,word,3,4,"Google Alerts, YouTube",2026-06-15
+2026-06-29,compensation,word,3,4,"YouTube, YouTube AU",2025-09-25
+2026-06-29,fighting,word,3,4,"YouTube, YouTube AU",2014-12-05
+2026-06-29,davids,word,3,4,YouTube,2026-06-18
+2026-06-29,free nano,phrase,3,4,YouTube,2026-06-18
+2026-06-29,infection,word,3,4,"Google Alerts, YouTube",2026-06-13
+2026-06-29,ndis,word,3,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,team,word,3,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,vaccines protecting,phrase,3,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,embrace,word,3,4,"Google Alerts, YouTube",2026-06-17
+2026-06-29,recent,word,3,4,"Google Alerts, YouTube, YouTube AU",2024-11-04
+2026-06-29,shorts ytshorts,phrase,3,4,YouTube,2026-06-20
+2026-06-29,requirement,word,3,4,"Google Alerts, YouTube",2026-06-20
+2026-06-29,vaccine requirement,phrase,3,4,"Google Alerts, YouTube",2026-06-20
+2026-06-29,conversation,word,3,4,"YouTube, YouTube AU",2026-06-13
+2026-06-29,tomorrow,word,3,4,"Reddit, YouTube",2021-09-12
+2026-06-29,preventable,word,3,4,"Google Alerts, YouTube",2026-06-18
+2026-06-29,carbon,word,3,4,"Google Alerts, YouTube",2026-06-17
+2026-06-29,virus vaccine,phrase,3,4,"Google Alerts, YouTube",2026-06-20
+2026-06-29,benefit,word,3,4,"Google Alerts, YouTube, YouTube AU",2022-04-08
+2026-06-29,international,word,3,4,"Google Alerts, YouTube",2026-06-12
+2026-06-29,secret,word,3,4,"Google Alerts, YouTube",2026-06-16
+2026-06-29,fluoride little,phrase,3,4,YouTube,2026-06-23
+2026-06-29,filtration,word,3,4,"Google Alerts, YouTube",2026-06-22
+2026-06-29,families,word,3,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,publichealth,word,3,4,"YouTube, YouTube AU",2026-05-25
+2026-06-29,prompts,word,3,4,"Google Alerts, YouTube, YouTube AU",2026-05-21
+2026-06-29,school,word,3,4,"Google Alerts, YouTube",2026-06-18
+2026-06-29,cairns,word,3,4,"Google Alerts, YouTube AU",2024-11-10
+2026-06-29,reasons,word,3,4,YouTube AU,2021-09-01
+2026-06-29,targets,word,3,4,"Google Alerts, YouTube AU",2026-05-28
+2026-06-29,gympie,word,3,4,YouTube AU,2025-09-25
+2026-06-29,gympie council,phrase,3,4,YouTube AU,2025-09-25
+2026-06-29,region,word,3,4,"Google Alerts, YouTube AU",2024-10-12
+2026-06-29,measles outbreaks,phrase,3,4,"Google Alerts, YouTube AU",2025-04-01
+2026-06-29,find,word,3,4,"Google Alerts, YouTube AU",2026-05-24
+2026-06-29,rsv vaccine,phrase,3,4,"Google Alerts, YouTube AU",2026-05-14
+2026-06-29,eliminated,word,3,4,"Google Alerts, YouTube AU",2026-06-20
+2026-06-29,preclinical,word,3,4,"Google Alerts, YouTube AU",2026-06-11
+2026-06-29,numbers,word,3,4,"Google Alerts, Reddit",2022-01-23
+2026-06-29,influenza flu,phrase,3,4,Google Alerts,2026-06-12
+2026-06-29,residents,word,3,4,Google Alerts,2026-06-11
+2026-06-29,defence,word,3,4,Google Alerts,2026-06-11
+2026-06-29,ahead,word,3,4,Google Alerts,2026-06-12
+2026-06-29,pioneer,word,3,4,Google Alerts,2026-06-13
+2026-06-29,older people,phrase,3,4,Google Alerts,2026-06-13
+2026-06-29,boosts,word,3,4,Google Alerts,2026-06-16
+2026-06-29,adult pneumococcal,phrase,3,4,Google Alerts,2026-06-16
+2026-06-29,territory,word,3,4,Google Alerts,2026-06-16
+2026-06-29,uptake,word,3,4,Google Alerts,2026-06-17
+2026-06-29,line,word,3,4,Google Alerts,2026-06-17
+2026-06-29,first line,phrase,3,4,Google Alerts,2026-06-17
+2026-06-29,practice,word,3,4,Google Alerts,2026-06-17
+2026-06-29,webinar,word,3,4,Google Alerts,2026-06-18
+2026-06-29,toxic waste,phrase,3,3,YouTube,2020-11-18
+2026-06-29,toxic fluoride,phrase,3,3,YouTube,2022-07-15
+2026-06-29,friendly,word,3,3,"YouTube, YouTube AU",2018-10-13
+2026-06-29,plan,word,3,3,"Google Alerts, YouTube",2023-08-30
+2026-06-29,cannot,word,3,3,YouTube,2026-03-12
+2026-06-29,govt,word,3,3,YouTube,2026-03-12
+2026-06-29,vaers,word,3,3,YouTube,2026-02-16
+2026-06-29,keep,word,3,3,"Google Alerts, YouTube",2026-05-13
+2026-06-29,wrong,word,3,3,"Google Alerts, YouTube",2022-01-29
+2026-06-29,fluoride debate,phrase,3,3,"YouTube, YouTube AU",2024-10-12
+2026-06-29,drugs,word,3,3,"Google Alerts, YouTube",2021-10-02
+2026-06-29,said,word,3,3,YouTube,2021-10-02
+2026-06-29,harmful,word,3,3,"Google Alerts, YouTube",2021-10-02
+2026-06-29,minutes,word,3,3,"YouTube, YouTube AU",2020-04-10
+2026-06-29,stage,word,3,3,"Google Alerts, YouTube",2026-04-20
+2026-06-29,reverse,word,3,3,"YouTube, YouTube AU",2024-10-16
+2026-06-29,osmosis,word,3,3,"YouTube, YouTube AU",2024-10-16
+2026-06-29,reverse osmosis,phrase,3,3,"YouTube, YouTube AU",2024-10-16
+2026-06-29,top best,phrase,3,3,"YouTube, YouTube AU",2024-10-16
+2026-06-29,europe,word,3,3,"Google Alerts, YouTube",2026-03-26
+2026-06-29,won't,word,3,3,"Google Alerts, YouTube",2026-03-26
+2026-06-29,viable,word,3,3,"Google Alerts, YouTube",2025-10-06
+2026-06-29,fluoride industrial,phrase,3,3,YouTube,2016-03-12
+2026-06-29,dangers fluoride,phrase,3,3,YouTube,2016-03-12
+2026-06-29,neurotoxin,word,3,3,"YouTube, YouTube AU",2022-07-22
+2026-06-29,breath,word,3,3,YouTube,2026-05-21
+2026-06-29,public water,phrase,3,3,"Google Alerts, YouTube",2022-10-08
+2026-06-29,city council,phrase,3,3,"Google Alerts, YouTube",2011-05-05
+2026-06-29,day vlog,phrase,3,3,"YouTube, YouTube AU",2026-05-30
+2026-06-29,description,word,3,3,"Google Alerts, YouTube, YouTube AU",2020-03-15
+2026-06-29,month vaccination,phrase,3,3,"YouTube, YouTube AU",2022-01-02
+2026-06-29,possible,word,3,3,YouTube,2025-12-11
+2026-06-29,knew,word,3,3,"Reddit, YouTube",2025-05-23
+2026-06-29,immune system,phrase,3,3,YouTube,2025-12-13
+2026-06-29,poisoning,word,3,3,YouTube,2026-06-05
+2026-06-29,used,word,3,3,"Reddit, YouTube",2024-04-29
+2026-06-29,myth,word,3,3,YouTube,2026-04-01
+2026-06-29,worse,word,3,3,"Google Alerts, YouTube",2026-06-11
+2026-06-29,cover-up,word,3,3,YouTube,2026-06-11
+2026-06-29,patients,word,3,3,"Reddit, YouTube",2025-08-10
+2026-06-29,federal court,phrase,3,3,"Reddit, YouTube",2022-07-05
+2026-06-29,voters,word,3,3,"YouTube, YouTube AU",2026-05-16
+2026-06-29,fluoride cover,phrase,3,3,YouTube,2026-06-13
+2026-06-29,fluoride type,phrase,3,3,YouTube,2026-06-13
+2026-06-29,new research,phrase,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,community water,phrase,3,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,water systems,phrase,3,3,"Google Alerts, YouTube",2026-06-10
+2026-06-29,clean,word,3,3,"Google Alerts, YouTube, YouTube AU",2026-05-08
+2026-06-29,colgate total,phrase,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,hidden truth,phrase,3,3,YouTube,2026-06-13
+2026-06-29,nano-hydroxyapatite,word,3,3,"YouTube, YouTube AU",2024-09-01
+2026-06-29,sleep,word,3,3,"Google Alerts, YouTube",2026-05-01
+2026-06-29,surprise,word,3,3,YouTube,2026-06-13
+2026-06-29,aaj,word,3,3,YouTube,2026-06-13
+2026-06-29,viralshort,word,3,3,YouTube,2026-06-13
+2026-06-29,familyvlog,word,3,3,YouTube,2026-06-13
+2026-06-29,babyvaccination,word,3,3,YouTube,2026-06-13
+2026-06-29,given,word,3,3,YouTube,2026-06-13
+2026-06-29,mrna vaccine,phrase,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,happens,word,3,3,YouTube,2026-06-13
+2026-06-29,pregnant women,phrase,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,infections,word,3,3,"Google Alerts, YouTube",2025-02-13
+2026-06-29,students,word,3,3,YouTube,2013-09-19
+2026-06-29,covid shots,phrase,3,3,YouTube,2025-12-08
+2026-06-29,trump,word,3,3,"Google Alerts, YouTube",2025-12-09
+2026-06-29,going,word,3,3,YouTube,2025-11-13
+2026-06-29,i'm,word,3,3,"Google Alerts, YouTube",2025-11-05
+2026-06-29,accountable,word,3,3,"Google Alerts, YouTube",2025-10-12
+2026-06-29,isn't,word,3,3,"Google Alerts, YouTube",2025-10-12
+2026-06-29,maga,word,3,3,YouTube,2025-10-11
+2026-06-29,destroyed,word,3,3,YouTube,2025-10-11
+2026-06-29,maga destroyed,phrase,3,3,YouTube,2025-10-11
+2026-06-29,harm,word,3,3,"Google Alerts, YouTube",2026-05-10
+2026-06-29,exist,word,3,3,YouTube,2026-01-03
+2026-06-29,emotional,word,3,3,YouTube,2025-12-31
+2026-06-29,ambassador,word,3,3,"Google Alerts, YouTube, YouTube AU",2024-11-18
+2026-06-29,immunity better,phrase,3,3,YouTube,2022-02-24
+2026-06-29,thousands,word,3,3,"Google Alerts, Reddit, YouTube",2022-05-23
+2026-06-29,doses,word,3,3,"Google Alerts, Reddit, YouTube",2021-06-22
+2026-06-29,vitamin,word,3,3,YouTube,2026-06-12
+2026-06-29,rabies vaccine,phrase,3,3,YouTube,2026-06-14
+2026-06-29,they're,word,3,3,"Reddit, YouTube",2023-09-22
+2026-06-29,justice,word,3,3,"Google Alerts, YouTube",2026-06-14
+2026-06-29,chief,word,3,3,"Google Alerts, YouTube",2025-12-11
+2026-06-29,dna,word,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,shorts viral,phrase,3,3,YouTube,2026-06-13
+2026-06-29,matter,word,3,3,YouTube,2022-01-22
+2026-06-29,birds,word,3,3,"Google Alerts, YouTube",2026-06-14
+2026-06-29,vaccination ytshorts,phrase,3,3,YouTube,2026-06-14
+2026-06-29,chicks,word,3,3,YouTube,2026-06-14
+2026-06-29,coronavirus,word,3,3,"Google Alerts, Reddit, YouTube",2023-06-24
+2026-06-29,ever,word,3,3,YouTube,2026-06-14
+2026-06-29,reaction,word,3,3,YouTube,2026-06-14
+2026-06-29,born,word,3,3,YouTube,2026-06-13
+2026-06-29,fun,word,3,3,YouTube,2026-06-15
+2026-06-29,rinsing,word,3,3,YouTube,2026-06-15
+2026-06-29,lost,word,3,3,YouTube,2026-06-14
+2026-06-29,love lost,phrase,3,3,YouTube,2026-06-14
+2026-06-29,lyrics,word,3,3,YouTube,2026-06-14
+2026-06-29,final,word,3,3,"Google Alerts, YouTube",2026-06-14
+2026-06-29,vaccination time,phrase,3,3,YouTube,2026-06-15
+2026-06-29,vlogs,word,3,3,YouTube,2026-06-15
+2026-06-29,giant,word,3,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,even,word,3,3,YouTube,2026-06-08
+2026-06-29,important vaccines,phrase,3,3,YouTube,2026-06-16
+2026-06-29,johnson,word,3,3,YouTube,2026-06-16
+2026-06-29,reform,word,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,calls,word,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,wants,word,3,3,"YouTube, YouTube AU",2025-04-25
+2026-06-29,english,word,3,3,"Google Alerts, YouTube, YouTube AU",2022-01-06
+2026-06-29,rare,word,3,3,"Google Alerts, Reddit, YouTube",2024-04-29
+2026-06-29,full,word,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,best fluoride-free,phrase,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,vlog minivlog,phrase,3,3,YouTube,2026-06-16
+2026-06-29,vaccination awareness,phrase,3,3,YouTube,2026-06-15
+2026-06-29,trendingshorts,word,3,3,YouTube,2026-06-16
+2026-06-29,protects,word,3,3,YouTube,2026-06-17
+2026-06-29,save lives,phrase,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,vaccines save,phrase,3,3,YouTube,2026-06-17
+2026-06-29,vaccination dog,phrase,3,3,YouTube,2026-06-16
+2026-06-29,animation,word,3,3,YouTube,2026-06-17
+2026-06-29,enough,word,3,3,YouTube,2022-02-14
+2026-06-29,dentists,word,3,3,YouTube,2026-06-17
+2026-06-29,without fluoride,phrase,3,3,"YouTube, YouTube AU",2023-11-20
+2026-06-29,girl,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,brave,word,3,3,YouTube,2026-06-17
+2026-06-29,vaccination today,phrase,3,3,YouTube,2026-06-17
+2026-06-29,bill,word,3,3,"YouTube, YouTube AU",2026-06-17
+2026-06-29,baby cutebaby,phrase,3,3,YouTube,2026-06-17
+2026-06-29,vaccine hospital,phrase,3,3,YouTube,2026-06-17
+2026-06-29,teboy,word,3,3,YouTube,2026-06-18
+2026-06-29,toothpaste fluoride-free,phrase,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,vaccination matters,phrase,3,3,YouTube,2026-06-17
+2026-06-29,changed,word,3,3,YouTube,2026-06-19
+2026-06-29,started,word,3,3,"YouTube, YouTube AU",2018-01-24
+2026-06-29,pasta gigi,phrase,3,3,YouTube,2026-06-19
+2026-06-29,cleaning,word,3,3,YouTube,2026-06-19
+2026-06-29,away,word,3,3,"Reddit, YouTube",2020-03-13
+2026-06-29,lot,word,3,3,"Reddit, YouTube",2021-09-12
+2026-06-29,gentle,word,3,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,fresh,word,3,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,say,word,3,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,sdf,word,3,3,YouTube,2026-06-19
+2026-06-29,shares,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,making,word,3,3,"Reddit, YouTube",2021-09-12
+2026-06-29,easy,word,3,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,health protection,phrase,3,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,jobs,word,3,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,chinese,word,3,3,"YouTube, YouTube AU",2026-06-06
+2026-06-29,tablets,word,3,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,toothpaste tablets,phrase,3,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,ends,word,3,3,YouTube,2026-06-20
+2026-06-29,vaccine may,phrase,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,village,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,dementia risk,phrase,3,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,strong,word,3,3,YouTube,2026-06-21
+2026-06-29,rescue,word,3,3,"Google Alerts, YouTube",2026-06-21
+2026-06-29,vaccine program,phrase,3,3,"Google Alerts, YouTube",2026-06-21
+2026-06-29,nearly,word,3,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,shortsvideo,word,3,3,YouTube,2026-06-22
+2026-06-29,toothpaste fluoride,phrase,3,3,"Google Alerts, YouTube",2026-06-22
+2026-06-29,oralhygiene,word,3,3,YouTube,2026-06-21
+2026-06-29,order,word,3,3,"Reddit, YouTube",2025-05-16
+2026-06-29,subscribe,word,3,3,YouTube,2026-06-21
+2026-06-29,nature,word,3,3,"Reddit, YouTube",2026-04-07
+2026-06-29,alleged,word,3,3,"Google Alerts, Reddit, YouTube",2026-05-07
+2026-06-29,need know,phrase,3,3,"Google Alerts, YouTube",2026-06-23
+2026-06-29,call,word,3,3,"Google Alerts, YouTube",2026-06-13
+2026-06-29,ebola vaccine,phrase,3,3,"YouTube, YouTube AU",2026-05-24
+2026-06-29,hit,word,3,3,"Google Alerts, Reddit, YouTube",2023-09-22
+2026-06-29,infected,word,3,3,"Google Alerts, YouTube",2026-06-23
+2026-06-29,vaccine explained,phrase,3,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,formula,word,3,3,YouTube,2026-06-24
+2026-06-29,removed,word,3,3,"Reddit, YouTube, YouTube AU",2022-11-04
+2026-06-29,vaccine treatment,phrase,3,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,first vaccination,phrase,3,3,YouTube,2026-06-23
+2026-06-29,kid,word,3,3,"YouTube, YouTube AU",2018-10-13
+2026-06-29,keeping,word,3,3,"Google Alerts, Reddit, YouTube",2025-05-19
+2026-06-29,week,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,testing,word,3,3,"Google Alerts, YouTube, YouTube AU",2026-06-14
+2026-06-29,probe,word,3,3,"Google Alerts, YouTube",2025-12-11
+2026-06-29,committee,word,3,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,advisory,word,3,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,black,word,3,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,yet,word,3,3,"Google Alerts, YouTube",2026-06-23
+2026-06-29,special,word,3,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,hai,word,3,3,YouTube,2026-06-27
+2026-06-29,mandates,word,3,3,"Reddit, YouTube",2022-11-04
+2026-06-29,poliovaccine,word,3,3,YouTube,2026-06-28
+2026-06-29,miss,word,3,3,YouTube,2026-06-28
+2026-06-29,reason,word,3,3,"Google Alerts, YouTube",2026-06-23
+2026-06-29,launches,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,age,word,3,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,cost,word,3,3,"Google Alerts, YouTube AU",2025-01-12
+2026-06-29,tga,word,3,3,"Google Alerts, Reddit, YouTube AU",2021-01-17
+2026-06-29,decline,word,3,3,"Google Alerts, YouTube AU",2026-06-07
+2026-06-29,spreading,word,3,3,"Google Alerts, YouTube AU",2024-08-17
+2026-06-29,channel,word,3,3,YouTube AU,2015-12-25
+2026-06-29,premier,word,3,3,"Google Alerts, Reddit, YouTube AU",2022-12-02
+2026-06-29,crisis,word,3,3,"Google Alerts, YouTube AU",2026-06-15
+2026-06-29,breakthrough,word,3,3,"Google Alerts, YouTube AU",2026-06-16
+2026-06-29,aussie,word,3,3,"Google Alerts, Reddit, YouTube AU",2026-05-07
+2026-06-29,lifesaving,word,3,3,"Google Alerts, YouTube AU",2025-12-09
+2026-06-29,registration,word,3,3,Reddit,2025-11-07
+2026-06-29,covid vaccinations,phrase,3,3,"Google Alerts, Reddit",2025-08-10
+2026-06-29,including,word,3,3,"Google Alerts, Reddit",2022-11-04
+2026-06-29,jabs,word,3,3,"Google Alerts, Reddit",2025-08-10
+2026-06-29,strait,word,3,3,Google Alerts,2026-06-12
+2026-06-29,islander,word,3,3,Google Alerts,2026-06-12
+2026-06-29,welcomes,word,3,3,Google Alerts,2026-06-12
+2026-06-29,urgent warning,phrase,3,3,Google Alerts,2026-06-11
+2026-06-29,qld,word,3,3,Google Alerts,2026-06-11
+2026-06-29,slow start,phrase,3,3,Google Alerts,2026-06-11
+2026-06-29,leader,word,3,3,Google Alerts,2026-06-13
+2026-06-29,list,word,3,3,Google Alerts,2026-06-13
+2026-06-29,drc,word,3,3,Google Alerts,2026-06-13
+2026-06-29,men,word,3,3,Google Alerts,2026-06-14
+2026-06-29,infectious,word,3,3,Google Alerts,2026-06-15
+2026-06-29,growth,word,3,3,Google Alerts,2026-06-15
+2026-06-29,across,word,3,3,Google Alerts,2026-06-15
+2026-06-29,receives,word,3,3,Google Alerts,2026-06-16
+2026-06-29,shortages,word,3,3,Google Alerts,2026-06-17
+2026-06-29,details,word,3,3,Google Alerts,2026-06-17
+2026-06-29,means,word,3,3,Google Alerts,2026-06-17
+2026-06-29,challenges,word,3,3,Google Alerts,2026-06-17
+2026-06-29,twc,word,3,3,Google Alerts,2026-06-17
+2026-06-29,protected,word,3,3,Google Alerts,2026-06-17
+2026-06-29,officer,word,3,3,Google Alerts,2026-06-18
+2026-06-29,capvaxive,word,3,3,Google Alerts,2026-06-19
+2026-06-29,expanding,word,3,3,Google Alerts,2026-06-19
+2026-06-29,program extended,phrase,3,3,Google Alerts,2026-06-22
+2026-06-29,pharmacist,word,3,3,Google Alerts,2026-06-22
+2026-06-29,resign,word,3,3,Google Alerts,2026-06-22
+2026-06-29,administration,word,3,3,Google Alerts,2026-06-22
+2026-06-29,clinical,word,3,3,Google Alerts,2026-06-22
+2026-06-29,northern,word,3,3,Google Alerts,2026-06-22
+2026-06-29,commissioner,word,3,3,Google Alerts,2026-06-23
+2026-06-29,nations aged,phrase,3,3,Google Alerts,2026-06-23
+2026-06-29,leads,word,3,3,Google Alerts,2026-06-23
+2026-06-29,melton,word,3,3,Google Alerts,2026-06-24
+2026-06-29,shorts shortsfeed,phrase,2,35,YouTube,2026-06-13
+2026-06-29,analysis,word,2,15,"Google Alerts, Reddit",2022-08-31
+2026-06-29,abc news,phrase,2,14,"Google Alerts, YouTube AU",2023-11-20
+2026-06-29,investing,word,2,12,Google Alerts,2026-06-11
+2026-06-29,investing com,phrase,2,12,Google Alerts,2026-06-11
+2026-06-29,services,word,2,8,Google Alerts,2026-06-16
+2026-06-29,news australia,phrase,2,7,"Google Alerts, YouTube AU",2021-04-16
+2026-06-29,social,word,2,7,"Google Alerts, YouTube AU",2026-06-18
+2026-06-29,republic,word,2,7,Google Alerts,2026-06-12
+2026-06-29,goat vaccine,phrase,2,6,YouTube,2026-06-16
+2026-06-29,fluoride incelcore,phrase,2,6,YouTube,2026-06-16
+2026-06-29,sped,word,2,6,YouTube,2026-06-17
+2026-06-29,vet surgery,phrase,2,6,"Google Alerts, YouTube",2026-06-21
+2026-06-29,presents paul,phrase,2,6,"YouTube, YouTube AU",2015-02-24
+2026-06-29,free presents,phrase,2,6,"YouTube, YouTube AU",2015-02-24
+2026-06-29,winter vaccination,phrase,2,6,"Google Alerts, YouTube AU",2026-06-18
+2026-06-29,nine,word,2,6,Google Alerts,2026-06-14
+2026-06-29,csl,word,2,6,Google Alerts,2026-06-15
+2026-06-29,avian,word,2,5,"Google Alerts, YouTube",2026-06-21
+2026-06-29,australia part,phrase,2,5,"YouTube, YouTube AU",2014-10-25
+2026-06-29,department health,phrase,2,5,"Google Alerts, Reddit",2022-07-05
+2026-06-29,friday,word,2,5,"Google Alerts, Reddit",2022-12-02
+2026-06-29,yahoo,word,2,5,Google Alerts,2026-06-12
+2026-06-29,glp,word,2,5,Google Alerts,2026-06-12
+2026-06-29,weight,word,2,5,Google Alerts,2026-06-12
+2026-06-29,weight loss,phrase,2,5,Google Alerts,2026-06-12
+2026-06-29,pertussis,word,2,5,Google Alerts,2026-06-18
+2026-06-29,bendigo,word,2,5,Google Alerts,2026-06-19
+2026-06-29,professor paul,phrase,2,4,"YouTube, YouTube AU",2020-03-19
+2026-06-29,bob,word,2,4,YouTube,2009-09-02
+2026-06-29,sheep,word,2,4,YouTube,2026-06-13
+2026-06-29,goatfarming,word,2,4,YouTube,2026-06-15
+2026-06-29,edit,word,2,4,YouTube,2026-06-14
+2026-06-29,overrated,word,2,4,YouTube,2026-06-14
+2026-06-29,explosive,word,2,4,YouTube,2026-06-15
+2026-06-29,scheme,word,2,4,"Google Alerts, YouTube",2026-06-16
+2026-06-29,pack,word,2,4,"Google Alerts, YouTube",2026-06-19
+2026-06-29,kidstoothpaste,word,2,4,YouTube,2026-06-25
+2026-06-29,first dose,phrase,2,4,YouTube,2026-06-24
+2026-06-29,immunisation program,phrase,2,4,"Google Alerts, YouTube",2026-06-20
+2026-06-29,california,word,2,4,"Google Alerts, YouTube AU",2024-11-04
+2026-06-29,postreat,word,2,4,"Google Alerts, YouTube AU",2024-09-29
+2026-06-29,postreat fluoride,phrase,2,4,"Google Alerts, YouTube AU",2024-09-29
+2026-06-29,vaccination health,phrase,2,4,"Google Alerts, YouTube AU",2026-06-18
+2026-06-29,health professional,phrase,2,4,"Google Alerts, YouTube AU",2026-06-18
+2026-06-29,professional video,phrase,2,4,"Google Alerts, YouTube AU",2026-06-18
+2026-06-29,vaccine efficacy,phrase,2,4,"Google Alerts, YouTube AU",2026-04-22
+2026-06-29,australian vaccine,phrase,2,4,"Google Alerts, YouTube AU",2026-04-22
+2026-06-29,issues,word,2,4,"Google Alerts, Reddit",2025-11-05
+2026-06-29,ncirs,word,2,4,Google Alerts,2026-06-12
+2026-06-29,chemist,word,2,4,Google Alerts,2026-06-12
+2026-06-29,racgp,word,2,4,Google Alerts,2026-06-12
+2026-06-29,medical centre,phrase,2,4,Google Alerts,2026-06-12
+2026-06-29,update june,phrase,2,4,Google Alerts,2026-06-12
+2026-06-29,morning,word,2,4,Google Alerts,2026-06-12
+2026-06-29,countries,word,2,4,Google Alerts,2026-06-13
+2026-06-29,citynews,word,2,4,Google Alerts,2026-06-15
+2026-06-29,victoria backs,phrase,2,4,Google Alerts,2026-06-15
+2026-06-29,asx,word,2,4,Google Alerts,2026-06-15
+2026-06-29,csl asx,phrase,2,4,Google Alerts,2026-06-15
+2026-06-29,asia's,word,2,4,Google Alerts,2026-06-15
+2026-06-29,building,word,2,4,Google Alerts,2026-06-17
+2026-06-29,moogoo,word,2,4,Google Alerts,2026-06-17
+2026-06-29,speech,word,2,4,Google Alerts,2026-06-18
+2026-06-29,miller,word,2,4,Google Alerts,2026-06-18
+2026-06-29,cartridge,word,2,4,Google Alerts,2026-06-18
+2026-06-29,act,word,2,4,Google Alerts,2026-06-23
+2026-06-29,brisbane north,phrase,2,4,Google Alerts,2026-06-24
+2026-06-29,stefanovic's,word,2,4,Google Alerts,2026-06-25
+2026-06-29,confirms,word,2,4,Google Alerts,2026-06-25
+2026-06-29,toxicity,word,2,3,"YouTube, YouTube AU",2020-03-25
+2026-06-29,fluoride toxicity,phrase,2,3,"YouTube, YouTube AU",2020-03-25
+2026-06-29,toxicity presentation,phrase,2,3,"YouTube, YouTube AU",2020-03-25
+2026-06-29,affect,word,2,3,"YouTube, YouTube AU",2024-12-25
+2026-06-29,allow,word,2,3,"Google Alerts, YouTube",2021-10-02
+2026-06-29,adorable,word,2,3,YouTube,2026-06-14
+2026-06-29,birth newborn,phrase,2,3,YouTube,2026-06-14
+2026-06-29,newbornbaby vaccine,phrase,2,3,YouTube,2026-06-14
+2026-06-29,vaccine cutebaby,phrase,2,3,YouTube,2026-06-13
+2026-06-29,court ruling,phrase,2,3,"YouTube, YouTube AU",2024-11-04
+2026-06-29,offered,word,2,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,meningitis vaccine,phrase,2,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,hack,word,2,3,YouTube,2026-06-14
+2026-06-29,vaccination trending,phrase,2,3,YouTube,2026-06-15
+2026-06-29,trending video,phrase,2,3,YouTube,2026-06-14
+2026-06-29,strains,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,takes,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,cas,word,2,3,YouTube,2026-06-16
+2026-06-29,boka,word,2,3,"YouTube, YouTube AU",2026-05-14
+2026-06-29,toothpaste nano,phrase,2,3,"YouTube, YouTube AU",2026-05-14
+2026-06-29,boka fluoride,phrase,2,3,"YouTube, YouTube AU",2026-05-14
+2026-06-29,via,word,2,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,mrna flu,phrase,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,variant,word,2,3,"Google Alerts, YouTube",2022-01-27
+2026-06-29,plastic,word,2,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,hydroxi,word,2,3,YouTube,2026-06-18
+2026-06-29,davids hydroxi,phrase,2,3,YouTube,2026-06-18
+2026-06-29,hydroxi fluoride,phrase,2,3,YouTube,2026-06-18
+2026-06-29,single-dose,word,2,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,alliance,word,2,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,dogvaccination,word,2,3,YouTube,2026-06-19
+2026-06-29,strikes,word,2,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,well,word,2,3,"Google Alerts, YouTube",2026-06-16
+2026-06-29,mai,word,2,3,YouTube,2026-06-19
+2026-06-29,champion,word,2,3,"Google Alerts, YouTube",2026-06-18
+2026-06-29,six,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,technology,word,2,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,liquid,word,2,3,YouTube,2026-06-20
+2026-06-29,tiny,word,2,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,vaccine preventable,phrase,2,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,chapter,word,2,3,"Google Alerts, YouTube",2026-06-21
+2026-06-29,babe,word,2,3,YouTube,2026-06-21
+2026-06-29,fluoride babe,phrase,2,3,YouTube,2026-06-21
+2026-06-29,hasn't,word,2,3,"Google Alerts, YouTube",2026-06-17
+2026-06-29,cuts,word,2,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,vaccine cuts,phrase,2,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,cuts cervical,phrase,2,3,"Google Alerts, YouTube",2026-06-19
+2026-06-29,woman,word,2,3,"YouTube, YouTube AU",2026-04-29
+2026-06-29,shorts vaccination,phrase,2,3,YouTube,2026-06-22
+2026-06-29,amazoninfluencer,word,2,3,YouTube,2026-06-23
+2026-06-29,treatments,word,2,3,"Google Alerts, YouTube",2026-06-23
+2026-06-29,donate,word,2,3,"YouTube, YouTube AU",2026-06-16
+2026-06-29,please donate,phrase,2,3,"YouTube, YouTube AU",2026-06-16
+2026-06-29,texas,word,2,3,"Google Alerts, YouTube",2026-06-20
+2026-06-29,gone,word,2,3,YouTube,2026-06-24
+2026-06-29,another gay,phrase,2,3,YouTube,2026-06-24
+2026-06-29,fluoride another,phrase,2,3,YouTube,2026-06-24
+2026-06-29,love song,phrase,2,3,YouTube,2026-06-24
+2026-06-29,gay love,phrase,2,3,YouTube,2026-06-24
+2026-06-29,house fluoride,phrase,2,3,"YouTube, YouTube AU",2025-10-17
+2026-06-29,strengthen,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,jaydes,word,2,3,YouTube,2026-06-25
+2026-06-29,dose bcg,phrase,2,3,YouTube,2026-06-24
+2026-06-29,vaccination crying,phrase,2,3,YouTube,2026-06-24
+2026-06-29,broader,word,2,3,"Google Alerts, YouTube",2026-06-12
+2026-06-29,surge,word,2,3,"Google Alerts, YouTube",2026-06-26
+2026-06-29,shape,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,remove chlorine,phrase,2,3,"Google Alerts, YouTube",2026-06-27
+2026-06-29,reminder,word,2,3,"Google Alerts, YouTube",2026-06-22
+2026-06-29,requirements,word,2,3,"Google Alerts, YouTube",2026-06-15
+2026-06-29,house water,phrase,2,3,"Google Alerts, YouTube AU",2024-06-03
+2026-06-29,health risks,phrase,2,3,"Google Alerts, YouTube AU",2024-11-04
+2026-06-29,party,word,2,3,"Reddit, YouTube AU",2017-02-28
+2026-06-29,ready,word,2,3,YouTube AU,2021-01-18
+2026-06-29,tonight,word,2,3,YouTube AU,2015-12-25
+2026-06-29,today tonight,phrase,2,3,YouTube AU,2015-12-25
+2026-06-29,andrew,word,2,3,"Google Alerts, YouTube AU",2026-05-08
+2026-06-29,adelaide,word,2,3,"Google Alerts, YouTube AU",2026-05-26
+2026-06-29,winter get,phrase,2,3,YouTube AU,2026-05-01
+2026-06-29,bio,word,2,3,"Google Alerts, YouTube AU",2026-06-12
+2026-06-29,injured,word,2,3,"Google Alerts, YouTube AU",2026-04-29
+2026-06-29,pharmacists,word,2,3,"Google Alerts, YouTube AU",2026-06-23
+2026-06-29,conference,word,2,3,"Google Alerts, Reddit",2026-01-29
+2026-06-29,march,word,2,3,"Google Alerts, Reddit",2026-02-28
+2026-06-29,pbac,word,2,3,"Google Alerts, Reddit",2026-02-04
+2026-06-29,get vaccine,phrase,2,3,"Google Alerts, Reddit",2026-01-22
+2026-06-29,long covid,phrase,2,3,"Google Alerts, Reddit",2022-05-26
+2026-06-29,updated,word,2,3,"Google Alerts, Reddit",2021-09-12
+2026-06-29,routine,word,2,3,Google Alerts,2026-06-12
+2026-06-29,health routine,phrase,2,3,Google Alerts,2026-06-12
+2026-06-29,make rsv,phrase,2,3,Google Alerts,2026-06-12
+2026-06-29,hantavirus,word,2,3,Google Alerts,2026-06-12
+2026-06-29,preclinical data,phrase,2,3,Google Alerts,2026-06-11
+2026-06-29,funding boost,phrase,2,3,Google Alerts,2026-06-11
+2026-06-29,edition,word,2,3,Google Alerts,2026-06-12
+2026-06-29,conversations,word,2,3,Google Alerts,2026-06-12
+2026-06-29,sheet,word,2,3,Google Alerts,2026-06-12
+2026-06-29,unicef,word,2,3,Google Alerts,2026-06-13
+2026-06-29,unveils,word,2,3,Google Alerts,2026-06-12
+2026-06-29,bookings,word,2,3,Google Alerts,2026-06-12
+2026-06-29,flu rsv,phrase,2,3,Google Alerts,2026-06-12
+2026-06-29,there's,word,2,3,Google Alerts,2026-06-14
+2026-06-29,experts warn,phrase,2,3,Google Alerts,2026-06-14
+2026-06-29,valley,word,2,3,Google Alerts,2026-06-14
+2026-06-29,within,word,2,3,Google Alerts,2026-06-15
+2026-06-29,live,word,2,3,Google Alerts,2026-06-15
+2026-06-29,biontech,word,2,3,Google Alerts,2026-06-15
+2026-06-29,multiple,word,2,3,Google Alerts,2026-06-15
+2026-06-29,alerts,word,2,3,Google Alerts,2026-06-16
+2026-06-29,gearing,word,2,3,Google Alerts,2026-06-16
+2026-06-29,demand,word,2,3,Google Alerts,2026-06-16
+2026-06-29,phn,word,2,3,Google Alerts,2026-06-16
+2026-06-29,western nsw,phrase,2,3,Google Alerts,2026-06-17
+2026-06-29,bundibugyo,word,2,3,Google Alerts,2026-06-17
+2026-06-29,bundibugyo ebola,phrase,2,3,Google Alerts,2026-06-17
+2026-06-29,markets,word,2,3,Google Alerts,2026-06-17
+2026-06-29,complacency,word,2,3,Google Alerts,2026-06-17
+2026-06-29,stronger first,phrase,2,3,Google Alerts,2026-06-17
+2026-06-29,building stronger,phrase,2,3,Google Alerts,2026-06-17
+2026-06-29,line defence,phrase,2,3,Google Alerts,2026-06-17
+2026-06-29,award,word,2,3,Google Alerts,2026-06-17
+2026-06-29,leaders,word,2,3,Google Alerts,2026-06-17
+2026-06-29,departments,word,2,3,Google Alerts,2026-06-18
+2026-06-29,immunisations,word,2,3,Google Alerts,2026-06-18
+2026-06-29,asx csl,phrase,2,3,Google Alerts,2026-06-19
+2026-06-29,diptheria,word,2,3,Google Alerts,2026-06-19
+2026-06-29,elimination,word,2,3,Google Alerts,2026-06-19
+2026-06-29,issued,word,2,3,Google Alerts,2026-06-20
+2026-06-29,warning issued,phrase,2,3,Google Alerts,2026-06-20
+2026-06-29,queensland health,phrase,2,3,Google Alerts,2026-06-18
+2026-06-29,syncytial,word,2,3,Google Alerts,2026-06-20
+2026-06-29,respiratory syncytial,phrase,2,3,Google Alerts,2026-06-20
+2026-06-29,syncytial virus,phrase,2,3,Google Alerts,2026-06-20
+2026-06-29,free speech,phrase,2,3,Google Alerts,2026-06-20
+2026-06-29,decisions,word,2,3,Google Alerts,2026-06-22
+2026-06-29,july health,phrase,2,3,Google Alerts,2026-06-22
+2026-06-29,cbd,word,2,3,Google Alerts,2026-06-22
+2026-06-29,policy review,phrase,2,3,Google Alerts,2026-06-22
+2026-06-29,key,word,2,3,Google Alerts,2026-06-22
+2026-06-29,drug,word,2,3,Google Alerts,2026-06-23
+2026-06-29,risk humans,phrase,2,3,Google Alerts,2026-06-23
+2026-06-29,shaping,word,2,3,Google Alerts,2026-06-23
+2026-06-29,add,word,2,3,Google Alerts,2026-06-23
+2026-06-29,road,word,2,3,Google Alerts,2026-06-23
+2026-06-29,haven't,word,2,3,Google Alerts,2026-06-24
+2026-06-29,shot you're,phrase,2,3,Google Alerts,2026-06-24
+2026-06-29,base hospital,phrase,2,3,Google Alerts,2026-06-25
+2026-06-29,macquarie base,phrase,2,3,Google Alerts,2026-06-25
+2026-06-29,ebola case,phrase,2,3,Google Alerts,2026-06-25
+2026-06-29,cat vaccinations,phrase,2,3,Google Alerts,2026-06-25
+2026-06-29,pipeline,word,2,3,Google Alerts,2026-06-26
+2026-06-29,stefanovic,word,2,3,Google Alerts,2026-06-26
+2026-06-29,karl stefanovic,phrase,2,3,Google Alerts,2026-06-26
+2026-06-29,sudan,word,2,3,Google Alerts,2026-06-27
+2026-06-29,south sudan,phrase,2,3,Google Alerts,2026-06-27
+2026-06-29,prices,word,2,3,Google Alerts,2026-06-27
