@@ -24,8 +24,9 @@ b. individual_keyword_match (the proposed new field): breaks matches out one key
 **Systems diagram of files in the repo:**
 ![There is a Python script that analyses the Master tab, and aims to capture emerging misinformation trends by logging the words that are not in the keyword list but are appearing in collated titles. The Google Sheet connects to Google Data Studio to display the data as charts on a dashboard.](newdiagram.png)
 
-**MAINTENANCE MANUAL**
-# Low-Cost Misinformation Tracker — Maintenance Guide
+
+# Maintenance Manual
+(I note that this manual was written with the help of AI, but I want to note that I have checked the details to make sure they are accurate.)
 
 This repository holds the surveillance prototype described in the research report
 *"Low-cost misinformation tracking for vaccination and fluoridation in Australia"*
@@ -159,7 +160,7 @@ see below).
 
 ### The analysis script
 
-**`emerging_data.py`** — reads the Master tab and counts words (and authors) that
+**`emerging_terms.py`** — reads the Master tab and counts words (and authors) that
 recur across titles but aren't in `keywords.csv`, excluding the `stopwords.csv`
 list. Feeds the "Emerging words" dashboard page.
 
