@@ -205,6 +205,78 @@ regenerating by re-running a script locally and signing in as the project accoun
 then updating the `GOOGLE_TOKEN` secret. The OAuth consent screen must stay set to
 **External / Published** to avoid the token expiring every 7 days.
 
+### Navigating and setting up Google Cloud
+
+Google Cloud is the "engine room" — it holds the keys that let the scripts talk to
+YouTube and to Google Sheets. You rarely need to touch it once it's working, but
+here's how to find your way around and how to rebuild it if needed.
+
+**Getting in:** go to https://console.cloud.google.com and sign in as
+lightweightprototype@gmail.com. The project is named **"My First Project"** — check
+the project name in the dropdown at the top of the page is showing that, since the
+console can default to a different project.
+
+**The two areas that matter** (both under the ☰ menu → **APIs & Services**):
+
+- **Enabled APIs & services** — confirms the three APIs this project depends on are
+  switched on: **YouTube Data API v3**, **Google Sheets API**, and **Google Drive
+  API**. If any is off, the matching script will fail.
+- **Credentials** — holds the two things the scripts authenticate with: the **OAuth
+  2.0 Client** (used for Sheets/Drive — this is what `credentials.json` comes from)
+  and the **API key** (used for YouTube).
+
+**Setting it up from scratch** (only needed if rebuilding in a new account):
+
+1. **Enable the APIs.** APIs & Services → Library → search and **Enable** each of:
+   YouTube Data API v3, Google Sheets API, Google Drive API.
+2. **Create the OAuth client** (for Sheets/Drive):
+   - APIs & Services → **OAuth consent screen** → set User Type to **External**,
+     fill in the basic fields, and **Publish** the app to production. *Publishing
+     matters:* if left in "Testing", the login token expires every 7 days and the
+     scripts break with an `invalid_grant` error.
+   - APIs & Services → Credentials → **Create Credentials → OAuth client ID** →
+     application type **Desktop app**. Download the JSON — this is your
+     `credentials.json`.
+3. **Create the API key** (for YouTube):
+   - Credentials → **Create Credentials → API key**. Copy the key.
+   - Click the key to **Restrict** it → under API restrictions, allow only
+     **YouTube Data API v3**. This limits damage if the key ever leaks.
+   - This key becomes the `YOUTUBE_API_KEY` secret/`.env` value.
+4. Generate `token.json` by running any script locally once and signing in as the
+   project account when the browser opens (see local-run steps below).
+
+**Note on service accounts:** an earlier setup attempt used a service-account key,
+but the account's organisation policy blocks service-account key creation
+(`iam.disableServiceAccountKeyCreation`). That's why this project uses the OAuth
+*user*-login flow (`credentials.json` + `token.json`) instead. Don't try to switch
+to a service account unless that policy changes.
+
+### ⚠ Free trial expiry — read this
+
+The Google Cloud **free trial ends on approximately 19th August 2026**. **This should
+not stop the tool from working**, and here's why: the three APIs this project uses
+(YouTube Data, Sheets, Drive) are **free, quota-based services**. They don't spend
+the trial's credit and don't require an active paid billing account — they have
+daily usage *limits*, not usage *charges*. The trial credit is for billable
+infrastructure (servers, databases) that this project doesn't use.
+
+When the trial ends:
+- The project ("My First Project") is **not deleted** — it stays, and its APIs and
+  credentials keep working.
+- You simply lose the USD $300 trial credit, which this project wasn't drawing on.
+
+**What to do as the trial nears its end:**
+1. A few days after the trial expires, check the **Actions** tab on GitHub — if the
+   YouTube and Sheets-writing runs still show green ticks, everything's fine.
+2. If you *do* see failures mentioning billing, go to Google Cloud → **Billing** and
+   confirm the project is on the free tier; you may need to dismiss a prompt asking
+   to upgrade to a paid account, but you should not need to actually pay.
+3. Do **not** delete the project or its credentials when Google emails about the
+   trial ending — that's the one action that *would* break the tool.
+
+If usage ever genuinely exceeds the free YouTube quota (10,000 units/day), the fix
+may be to reduce run frequency or keyword count, not to start paying.
+
 ### Running a script locally (for testing or regenerating the token)
 
 1. Install Python 3.11+
