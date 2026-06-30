@@ -67,7 +67,7 @@ have to run anything by hand — it happens on a schedule.
 |---|---|---|
 | Google account | lightweightprototype@gmail.com | Owns everything below. Login shared privately with supervisors. |
 | The data (Google Sheet) | "Prototype" spreadsheet in the account's Google Drive | One tab per source, plus the Master2 tab |
-| The dashboard | Google Data Studio (link in report Appendix 9) | Two pages: "Existing keywords" and "Emerging words" |
+| The dashboard | Google Data Studio (link: https://datastudio.google.com/u/0/reporting/123e6352-e168-433c-b26a-704555fd6a8c) | Two pages: "Existing keywords" and "Emerging words" |
 | The code | This GitHub repository (github.com/EP04/disinformation-tracker) | Scripts, config files, and the automation schedules |
 | The engine room | Google Cloud project (under the same account) | Holds the API keys that let the scripts talk to YouTube and Google Sheets |
 
