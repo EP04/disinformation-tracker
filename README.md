@@ -1,3 +1,4 @@
+# Information that the report was referring to
 **Keyword-matching logic and per-platform scraper configuration:**
 
 The keywords.csv contained 7 words from vaccination (vaccination, vaccine, selective vaccine schedule, pharma vaccine lying, vaccine autism parent group, vaccine death data, vaccine less than natural immunity) and 7 words from fluoridation (fluoridation, fluoride, fluoride free australia, fluoride water filter, fluoride byproduct, fluoride thyroid, mass medication fluoride).
@@ -11,7 +12,7 @@ For Reddit, the scraper searches the title and body text of the post, and if the
 The prototype's data pipeline changed substantially mid-project, creating a data gap and some structural complexity worth noting. These iterations explain a structural quirk: the "Reddit" tab feeds a separate "Reddit Uniq" tab before reaching "Master2." I deduplicated in a separate tab rather than risk breaking the live pipeline by deduplicating in place.
 
 **Recommendations and Future Work in refining pipeline:**
-1. Aggregate the Master tab at the scraper step: The current information flow is that each platform has its own scraper, each scraper uploads to its own platform tab in Google Sheets, and the Master tab is then assembled as an aggregate of those individual tabs. Ideally, the aggregation into the Master tab would happen directly at the scraper step rather than as a downstream consolidation.
+1. Aggregate the Master2 tab at the scraper step: The current information flow is that each platform has its own scraper, each scraper uploads to its own platform tab in Google Sheets, and the Master tab is then assembled as an aggregate of those individual tabs. Ideally, the aggregation into the Master tab would happen directly at the scraper step rather than as a downstream consolidation.
 
 2. Resolve the known duplicate issue in the Reddit data: Early tests and reruns of the Reddit monitor produced duplicate entries. These have been deduplicated in the "Reddit Uniq" tab of the "Prototype" spreadsheet, but be aware that results_all.csv on GitHub still contains the duplicates and should be cleaned before reuse.
 
@@ -21,8 +22,8 @@ The prototype's data pipeline changed substantially mid-project, creating a data
 a. agg_keyword_match (the current keywords_matched): preserves which combinations of keywords appear together, giving a view of topics by keyword co-occurrence.
 b. individual_keyword_match (the proposed new field): breaks matches out one keyword per row, enabling trend analysis for a single specific keyword (for example, tracking it by author or platform over time).
 
-**Systems diagram of files in the repo:**
-![There is a Python script that analyses the Master tab, and aims to capture emerging misinformation trends by logging the words that are not in the keyword list but are appearing in collated titles. The Google Sheet connects to Google Data Studio to display the data as charts on a dashboard.](newdiagram.png)
+# Systems diagram as of 1st July
+![There is a Python script that analyses the Master2 tab, and aims to capture emerging misinformation trends by logging the words that are not in the keyword list but are appearing in collated titles. The Google Sheet connects to Google Data Studio to display the data as charts on a dashboard.](newdiagram.png)
 
 
 # Maintenance Manual
@@ -65,7 +66,7 @@ have to run anything by hand — it happens on a schedule.
 | Thing | Where | Notes |
 |---|---|---|
 | Google account | lightweightprototype@gmail.com | Owns everything below. Login shared privately with supervisors. |
-| The data (Google Sheet) | "Prototype" spreadsheet in the account's Google Drive | One tab per source, plus the Master tab |
+| The data (Google Sheet) | "Prototype" spreadsheet in the account's Google Drive | One tab per source, plus the Master2 tab |
 | The dashboard | Google Data Studio (link in report Appendix 9) | Two pages: "Existing keywords" and "Emerging words" |
 | The code | This GitHub repository (github.com/EP04/disinformation-tracker) | Scripts, config files, and the automation schedules |
 | The engine room | Google Cloud project (under the same account) | Holds the API keys that let the scripts talk to YouTube and Google Sheets |
@@ -153,22 +154,22 @@ filter, so the bare tab catches global content Australians watch, the AU tab cat
 explicitly-Australian discussion). Searching costs 100 quota units/keyword; the free
 budget is 10,000/day, so two full runs (~3,300 units) sit comfortably under.
 
-**`google_alerts_monitor.py`** — reads the Google Alerts RSS feeds listed in
+**`google_monitor.py`** — reads the Google Alerts RSS feeds listed in
 `rss_links.csv`, strips Google's HTML/redirect wrapping, and writes to the
 "Google Alerts v2" tab. Replaced the old InoReader→Zapier chain (now retired —
 see below).
 
 ### The analysis script
 
-**`emerging_terms.py`** — reads the Master tab and counts words (and authors) that
+**`emerging_terms.py`** — reads the Master2 tab and counts words (and authors) that
 recur across titles but aren't in `keywords.csv`, excluding the `stopwords.csv`
 list. Feeds the "Emerging words" dashboard page.
 
-### How the data is stacked: the Master tab
+### How the data is stacked: the Master2 tab
 
-Each source writes to its own tab. A **Master tab** stacks them all into one table
+Each source writes to its own tab. A **Master2 tab** stacks them all into one table
 (same 15 columns) so the dashboard reads from a single source. This is done with a
-live spreadsheet formula in the Master tab, so it updates automatically as the
+live spreadsheet formula in the Master2 tab, so it updates automatically as the
 monitors append rows. (Report Figure 2 shows the full pipeline.)
 
 ### How the automation runs (GitHub Actions)
@@ -292,9 +293,11 @@ may be to reduce run frequency or keyword count, not to start paying.
 
 The original pipeline used **InoReader** (RSS reader) and **Zapier** (automation)
 to get Google Alerts into Sheets. Both are **no longer used** — replaced by
-`google_alerts_monitor.py`, which reads the feeds directly. The Zapier free trial
+`google_monitor.py`, which reads the feeds directly. The Zapier free trial
 expired 27 May 2026 (report Figure 6). You do not need InoReader or Zapier accounts
 to run the current system. Their mention in older notes is historical only.
+
+The "Master" tab is retired in favour of the "Master2" tab, as the Master contained data from the old pipeline where the Google Alerts data columns couldn't be fully filled in by the InoReader-Zapier pipeline, and when there was not the metric of relevance weight.
 
 ### Known limitations (carried from the report)
 
@@ -313,9 +316,10 @@ to run the current system. Their mention in older notes is historical only.
 
 ### Known cleanup tasks (from the report's Future Work)
 
-- Aggregate the Master tab at the scraper step rather than via sheet formula
+- Aggregate the Master2 tab at the scraper step rather than via sheet formula
 - Resolve duplicate rows in Reddit data
 - Split the `platform` cell in the Emerging Terms tab
-- Split the `keywords_matched` cell in Master
+- Split the `keywords_matched` cell in Master2
 - Store body text and comments (currently fetched then discarded) to improve
   emerging-term detection
+- Reddit duplicates are removed in the 'Reddit Uniq' tab, but results_all.csv in the repo still contains them — clean before reuse
